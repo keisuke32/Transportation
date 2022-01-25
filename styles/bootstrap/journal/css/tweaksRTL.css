@@ -1,0 +1,3 @@
+.btn.disabled:not(:hover), .btn[disabled]:not(:hover) {
+	color: #aaa;
+}

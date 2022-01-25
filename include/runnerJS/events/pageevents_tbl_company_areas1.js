@@ -1,0 +1,2 @@
+
+Runner.pages.PageSettings.addPageEvent('tbl_company_areas',Runner.pages.constants.PAGE_ADD,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){$("a.glyphicon-ok").on("click",function(){setTimeout(function(){location.reload();},1000);});;});

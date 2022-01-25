@@ -1,0 +1,2 @@
+
+Runner.pages.PageSettings.addPageEvent('tbl_rfq_carrier_quote',Runner.pages.constants.PAGE_EDIT,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){var ctrl=Runner.getControl(pageid,'TotalCost');ctrl.makeReadonly();});

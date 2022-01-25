@@ -1,0 +1,528 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel tbl_orders search}","hidden":"{$item_hide_search_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+								
+''
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+				{BEGIN row_grid_0}
+				[
+																{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":{$ID_pdfvalue},"hidden":"{$item_hide_integrated_search_field}"},
+				
+				
+			{"text":{$companyID_pdfvalue},"hidden":"{$item_hide_integrated_search_field1}"},
+				
+				
+			{"text":{$OrderStatusID_pdfvalue},"hidden":"{$item_hide_integrated_search_field3}"},
+				
+				
+			{"text":{$Inbound_pdfvalue},"hidden":"{$item_hide_integrated_search_field4}"},
+				
+				
+			{"text":{$PONumber_pdfvalue},"hidden":"{$item_hide_integrated_search_field5}"},
+				
+				
+			{"text":{$BOLNumber_pdfvalue},"hidden":"{$item_hide_integrated_search_field6}"},
+				
+				
+			{"text":{$ShipperID_pdfvalue},"hidden":"{$item_hide_integrated_search_field7}"},
+				
+				
+			{"text":{$ShipperReferenceNo_pdfvalue},"hidden":"{$item_hide_integrated_search_field8}"},
+				
+				
+			{"text":{$ShipperName_pdfvalue},"hidden":"{$item_hide_integrated_search_field9}"},
+				
+				
+			{"text":{$ShipperAddress1_pdfvalue},"hidden":"{$item_hide_integrated_search_field10}"},
+				
+				
+			{"text":{$ShipperAddress2_pdfvalue},"hidden":"{$item_hide_integrated_search_field11}"},
+				
+				
+			{"text":{$ShipperCity_pdfvalue},"hidden":"{$item_hide_integrated_search_field12}"},
+				
+				
+			{"text":{$ShipperProvinceID_pdfvalue},"hidden":"{$item_hide_integrated_search_field13}"},
+				
+				
+			{"text":{$ShipperCountryID_pdfvalue},"hidden":"{$item_hide_integrated_search_field14}"},
+				
+				
+			{"text":{$ShipperPostal_pdfvalue},"hidden":"{$item_hide_integrated_search_field15}"},
+				
+				
+			{"text":{$ShipperContactName_pdfvalue},"hidden":"{$item_hide_integrated_search_field16}"},
+				
+				
+			{"text":{$ShipperContactTel_pdfvalue},"hidden":"{$item_hide_integrated_search_field17}"},
+				
+				
+			{"text":{$ShipperContactFax_pdfvalue},"hidden":"{$item_hide_integrated_search_field18}"},
+				
+				
+			{"text":{$ShipperContactEmail_pdfvalue},"hidden":"{$item_hide_integrated_search_field19}"},
+				
+				
+			{"text":{$ConsigneeID_pdfvalue},"hidden":"{$item_hide_integrated_search_field20}"},
+				
+				
+			{"text":{$ConsigneeReferenceNo_pdfvalue},"hidden":"{$item_hide_integrated_search_field21}"},
+				
+				
+			{"text":{$ConsigneeName_pdfvalue},"hidden":"{$item_hide_integrated_search_field22}"},
+				
+				
+			{"text":{$ConsigneeAddress1_pdfvalue},"hidden":"{$item_hide_integrated_search_field23}"},
+				
+				
+			{"text":{$ConsigneeAddress2_pdfvalue},"hidden":"{$item_hide_integrated_search_field24}"},
+				
+				
+			{"text":{$ConsigneeCity_pdfvalue},"hidden":"{$item_hide_integrated_search_field25}"},
+				
+				
+			{"text":{$ConsigneeProvinceID_pdfvalue},"hidden":"{$item_hide_integrated_search_field26}"},
+				
+				
+			{"text":{$ConsigneeCountryID_pdfvalue},"hidden":"{$item_hide_integrated_search_field27}"},
+				
+				
+			{"text":{$ConsigneePostal_pdfvalue},"hidden":"{$item_hide_integrated_search_field28}"},
+				
+				
+			{"text":{$ConsigneeContactName_pdfvalue},"hidden":"{$item_hide_integrated_search_field29}"},
+				
+				
+			{"text":{$ConsigneeContactTel_pdfvalue},"hidden":"{$item_hide_integrated_search_field30}"},
+				
+				
+			{"text":{$ConsigneeContactFax_pdfvalue},"hidden":"{$item_hide_integrated_search_field31}"},
+				
+				
+			{"text":{$ConsigneeContactEmail_pdfvalue},"hidden":"{$item_hide_integrated_search_field32}"},
+				
+				
+			{"text":{$CarrierID_pdfvalue},"hidden":"{$item_hide_integrated_search_field33}"},
+				
+				
+			{"text":{$CarrierReferenceNo_pdfvalue},"hidden":"{$item_hide_integrated_search_field34}"},
+				
+				
+			{"text":{$CarrierName_pdfvalue},"hidden":"{$item_hide_integrated_search_field35}"},
+				
+				
+			{"text":{$CarrierContactName_pdfvalue},"hidden":"{$item_hide_integrated_search_field36}"},
+				
+				
+			{"text":{$CarrierContactTel_pdfvalue},"hidden":"{$item_hide_integrated_search_field37}"},
+				
+				
+			{"text":{$CarrierContactFax_pdfvalue},"hidden":"{$item_hide_integrated_search_field38}"},
+				
+				
+			{"text":{$CarrierContactEmail_pdfvalue},"hidden":"{$item_hide_integrated_search_field39}"},
+				
+				
+			{"text":{$CarrierDriver_pdfvalue},"hidden":"{$item_hide_integrated_search_field40}"},
+				
+				
+			{"text":{$CustomsBrokerID_pdfvalue},"hidden":"{$item_hide_integrated_search_field42}"},
+				
+				
+			{"text":{$CustomsBrokerName_pdfvalue},"hidden":"{$item_hide_integrated_search_field43}"},
+				
+				
+			{"text":{$CustomsBrokerContactName_pdfvalue},"hidden":"{$item_hide_integrated_search_field44}"},
+				
+				
+			{"text":{$CustomsBrokerContactTel_pdfvalue},"hidden":"{$item_hide_integrated_search_field45}"},
+				
+				
+			{"text":{$CustomsBrokerContactFax_pdfvalue},"hidden":"{$item_hide_integrated_search_field46}"},
+				
+				
+			{"text":{$CustomsBrokerContactEmail_pdfvalue},"hidden":"{$item_hide_integrated_search_field47}"},
+				
+				
+			{"text":{$PickupDateExpected_pdfvalue},"hidden":"{$item_hide_integrated_search_field48}"},
+				
+				
+			{"text":{$PickupDateActual_pdfvalue},"hidden":"{$item_hide_integrated_search_field49}"},
+				
+				
+			{"text":{$DeliveryDateExpected_pdfvalue},"hidden":"{$item_hide_integrated_search_field50}"},
+				
+				
+			{"text":{$DeliveryDateActual_pdfvalue},"hidden":"{$item_hide_integrated_search_field51}"},
+				
+				
+			{"text":{$Delivered_pdfvalue},"hidden":"{$item_hide_integrated_search_field52}"},
+				
+				
+			{"text":{$POD_pdfvalue},"hidden":"{$item_hide_integrated_search_field53}"},
+				
+				
+			{"text":{$PaymentTerms_pdfvalue},"hidden":"{$item_hide_integrated_search_field54}"},
+				
+				
+			{"text":{$EquipmentType_pdfvalue},"hidden":"{$item_hide_integrated_search_field55}"},
+				
+				
+			{"text":{$Routing_pdfvalue},"hidden":"{$item_hide_integrated_search_field56}"},
+				
+				
+			{"text":{$Instructions_pdfvalue},"hidden":"{$item_hide_integrated_search_field57}"},
+				
+				
+			{"text":{$Price_pdfvalue},"hidden":"{$item_hide_integrated_search_field58}"},
+				
+				
+			{"text":{$Invoiced_pdfvalue},"hidden":"{$item_hide_integrated_search_field59}"},
+				
+				
+			{"text":{$InvoiceID_pdfvalue},"hidden":"{$item_hide_integrated_search_field60}"},
+				
+				
+			{"text":{$Paid_pdfvalue},"hidden":"{$item_hide_integrated_search_field61}"},
+				
+				
+			{"text":{$Cost_pdfvalue},"hidden":"{$item_hide_integrated_search_field62}"},
+				
+				
+			{"text":{$Created_pdfvalue},"hidden":"{$item_hide_integrated_search_field63}"},
+				
+				
+			{"text":{$OrderNumber_pdfvalue},"hidden":"{$item_hide_integrated_search_field64}"},
+				
+				
+			{"text":{$BillToPartyID_pdfvalue},"hidden":"{$item_hide_integrated_search_field65}"},
+				
+				
+			{"text":{$BillToPartyReferenceNo_pdfvalue},"hidden":"{$item_hide_integrated_search_field66}"},
+				
+				
+			{"text":{$BillToPartyName_pdfvalue},"hidden":"{$item_hide_integrated_search_field67}"},
+				
+				
+			{"text":{$BillToPartyAddress1_pdfvalue},"hidden":"{$item_hide_integrated_search_field68}"},
+				
+				
+			{"text":{$BillToPartyAddress2_pdfvalue},"hidden":"{$item_hide_integrated_search_field69}"},
+				
+				
+			{"text":{$BillToPartyCity_pdfvalue},"hidden":"{$item_hide_integrated_search_field70}"},
+				
+				
+			{"text":{$BillToPartyProvinceID_pdfvalue},"hidden":"{$item_hide_integrated_search_field71}"},
+				
+				
+			{"text":{$BillToPartyCountryID_pdfvalue},"hidden":"{$item_hide_integrated_search_field72}"},
+				
+				
+			{"text":{$BillToPartyPostal_pdfvalue},"hidden":"{$item_hide_integrated_search_field73}"},
+				
+				
+			{"text":{$BillToPartyContactName_pdfvalue},"hidden":"{$item_hide_integrated_search_field74}"},
+				
+				
+			{"text":{$BillToPartyContactTel_pdfvalue},"hidden":"{$item_hide_integrated_search_field75}"},
+				
+				
+			{"text":{$BillToPartyContactFax_pdfvalue},"hidden":"{$item_hide_integrated_search_field76}"},
+				
+				
+			{"text":{$BillToPartyContactEmail_pdfvalue},"hidden":"{$item_hide_integrated_search_field77}"},
+				
+				
+			{"text":{$Terms_pdfvalue},"hidden":"{$item_hide_integrated_search_field78}"},
+				
+				
+			{"text":{$QuotationNumber_pdfvalue},"hidden":"{$item_hide_integrated_search_field79}"},
+				
+				
+			{"text":{$Modified_pdfvalue},"hidden":"{$item_hide_integrated_search_field80}"},
+				
+				
+			{"text":{$ShipperRegionID_pdfvalue},"hidden":"{$item_hide_integrated_search_field81}"},
+				
+				
+			{"text":{$ConsigneeRegionID_pdfvalue},"hidden":"{$item_hide_integrated_search_field82}"},
+				
+				
+			{"text":{$TrailerID_pdfvalue},"hidden":"{$item_hide_integrated_search_field83}"},
+				
+				
+			{"text":{$Status_pdfvalue},"hidden":"{$item_hide_integrated_search_field84}"},
+				
+				
+			{"text":{$NewOrder_pdfvalue},"hidden":"{$item_hide_integrated_search_field85}"},
+				
+				
+			{"text":{$PeriodStartDate_pdfvalue},"hidden":"{$item_hide_integrated_search_field86}"},
+				
+				
+			{"text":{$PeriodEndDate_pdfvalue},"hidden":"{$item_hide_integrated_search_field87}"},
+				
+				
+			{"text":{$Frequency_pdfvalue},"hidden":"{$item_hide_integrated_search_field88}"},
+				
+				
+			{"text":{$ShipperCountyName_pdfvalue},"hidden":"{$item_hide_integrated_search_field89}"},
+				
+				
+			{"text":{$ShipperLongitude_pdfvalue},"hidden":"{$item_hide_integrated_search_field90}"},
+				
+				
+			{"text":{$ShipperLatitude_pdfvalue},"hidden":"{$item_hide_integrated_search_field91}"},
+				
+				
+			{"text":{$ConsigneeCountyName_pdfvalue},"hidden":"{$item_hide_integrated_search_field92}"},
+				
+				
+			{"text":{$ConsigneeLongitude_pdfvalue},"hidden":"{$item_hide_integrated_search_field93}"},
+				
+				
+			{"text":{$ConsigneeLatitude_pdfvalue},"hidden":"{$item_hide_integrated_search_field94}"},
+				
+				
+			{"text":{$ShipperContactID_pdfvalue},"hidden":"{$item_hide_integrated_search_field2}"},
+				
+				
+			{"text":{$ConsigneeContactID_pdfvalue},"hidden":"{$item_hide_integrated_search_field95}"},
+				
+				
+			{"text":{$CarrierContactID_pdfvalue},"hidden":"{$item_hide_integrated_search_field96}"},
+				
+				
+			{"text":{$CustomsContactID_pdfvalue},"hidden":"{$item_hide_integrated_search_field97}"},
+				
+				
+			{"text":{$BillToContactID_pdfvalue},"hidden":"{$item_hide_integrated_search_field98}"},
+				
+				
+			{"text":{$ShipperInstructions_pdfvalue},"hidden":"{$item_hide_integrated_search_field41}"},
+				
+				
+			{"text":{$ConsigneeInstructions_pdfvalue},"hidden":"{$item_hide_integrated_search_field99}"},
+				
+				
+			{"text":{$ShipperHoursOpen_pdfvalue},"hidden":"{$item_hide_integrated_search_field100}"},
+				
+				
+			{"text":{$ShipperHoursClose_pdfvalue},"hidden":"{$item_hide_integrated_search_field101}"},
+				
+				
+			{"text":{$ShipperDirections_pdfvalue},"hidden":"{$item_hide_integrated_search_field102}"},
+				
+				
+			{"text":{$ConsigneeHoursOpen_pdfvalue},"hidden":"{$item_hide_integrated_search_field103}"},
+				
+				
+			{"text":{$ConsigneeHoursClose_pdfvalue},"hidden":"{$item_hide_integrated_search_field104}"},
+				
+				
+			{"text":{$ConsigneeDirections_pdfvalue},"hidden":"{$item_hide_integrated_search_field105}"},
+				
+				
+			{"text":{$ShipperAddress_pdfvalue},"hidden":"{$item_hide_integrated_search_field106}"},
+				
+				
+			{"text":{$ShipperContactDetails_pdfvalue},"hidden":"{$item_hide_integrated_search_field107}"},
+				
+				
+			{"text":{$ConsigneeAddress_pdfvalue},"hidden":"{$item_hide_integrated_search_field108}"},
+				
+				
+			{"text":{$ConsigneeContactDetails_pdfvalue},"hidden":"{$item_hide_integrated_search_field109}"},
+				
+				
+			{"text":{$CarrierContactDetails_pdfvalue},"hidden":"{$item_hide_integrated_search_field110}"},
+				
+				
+			{"text":{$CustomsBrokerContactDetails_pdfvalue},"hidden":"{$item_hide_integrated_search_field111}"},
+				
+				
+			{"text":{$BillToAddress_pdfvalue},"hidden":"{$item_hide_integrated_search_field112}"},
+				
+				
+			{"text":{$BillToContactDetails_pdfvalue},"hidden":"{$item_hide_integrated_search_field113}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_c3}
+											],
+				{END row_grid_0}
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+				
+			{"text":""},
+				
+				
+			{"text":"","hidden":"{$item_hide_search_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_search_cancel}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+			]
+}
+  

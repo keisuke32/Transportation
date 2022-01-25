@@ -1,0 +1,1121 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel tbl_company edit}","hidden":"{$item_hide_edit_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_edit_message}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+				{BEGIN row_grid_0}
+				[
+																{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":[{"text":"{$jslabel tbl_company Name }","bold":true}," ",{$Name_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field1}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company Type }","bold":true}," ",{$Type_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field15}"},
+				
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section',
+			widths: ['*'],
+			body: [
+				[{text: 'General', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section_0}
+									"*", 
+								{END col_section_0}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section_0}
+				[
+																{BEGIN cellblock_section_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":[{"text":"{$jslabel tbl_company PrimaryPhone }","bold":true}," ",{$PrimaryPhone_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field5}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company PrimaryFax }","bold":true}," ",{$PrimaryFax_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field21}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company SalesRepID }","bold":true}," ",{$SalesRepID_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field6}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company CreditApprovalStatus }","bold":true}," ",{$CreditApprovalStatus_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field7}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company Insurance }","bold":true}," ",{$Insurance_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field8}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company Comments }","bold":true}," ",{$Comments_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field4}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_section_c3}
+											],
+				{END row_section_0}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+ 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section1',
+			widths: ['*'],
+			body: [
+				[{text: 'References', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section1_0}
+									"*", 
+								{END col_section1_0}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section1_0}
+				[
+																{BEGIN cellblock_section1_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":[{"text":"{$jslabel tbl_company ReferenceNumber }","bold":true}," ",{$ReferenceNumber_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company CustomerNumber }","bold":true}," ",{$CustomerNumber_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field3}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company BusinessNumber }","bold":true}," ",{$BusinessNumber_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field2}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_section1_c3}
+											],
+				{END row_section1_0}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+ 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section2',
+			widths: ['*'],
+			body: [
+				[{text: 'Terms', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section2_0}
+									"*", 
+								{END col_section2_0}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section2_0}
+				[
+																{BEGIN cellblock_section2_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":[{"text":"{$jslabel tbl_company INCOTermsID }","bold":true}," ",{$INCOTermsID_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field12}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company INCOTermsDescription }","bold":true}," ",{$INCOTermsDescription_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field13}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company PaymentTermsID }","bold":true}," ",{$PaymentTermsID_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field14}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_section2_c3}
+											],
+				{END row_section2_0}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+ 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section3',
+			widths: ['*'],
+			body: [
+				[{text: 'Banking', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section3_0}
+									"*", 
+								{END col_section3_0}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section3_0}
+				[
+																{BEGIN cellblock_section3_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":[{"text":"{$jslabel tbl_company CADBankInstitutionNumber }","bold":true}," ",{$CADBankInstitutionNumber_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field9}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company CADBankroutingNumber }","bold":true}," ",{$CADBankroutingNumber_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field10}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company CADBankAccountNumber }","bold":true}," ",{$CADBankAccountNumber_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field11}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_section3_c3}
+											],
+				{END row_section3_0}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+ 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section4',
+			widths: ['*'],
+			body: [
+				[{text: 'Address', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section4_0}
+									"*", 
+								{END col_section4_0}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section4_0}
+				[
+																{BEGIN cellblock_section4_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			 {BEGIN details_tbl_address}
+			{$displayDetailTable_tbl_address }
+		{END details_tbl_address},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_section4_c1}
+											],
+				{END row_section4_0}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+ 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section10',
+			widths: ['*'],
+			body: [
+				[{text: 'Carrier', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section10_0}
+									"*", 
+								{END col_section10_0}
+															{BEGIN col_section10_1}
+									"*", 
+								{END col_section10_1}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section10_0}
+				[
+																{BEGIN cellblock_section10_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":[{"text":"{$jslabel tbl_company CarrierSCAC_Number }","bold":true}," ",{$CarrierSCAC_Number_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field16}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company CarrierDOT_Number }","bold":true}," ",{$CarrierDOT_Number_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field17}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_section10_c1}
+																							{BEGIN cellblock_section10_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":[{"text":"{$jslabel tbl_company CarrierMC_Number }","bold":true}," ",{$CarrierMC_Number_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field18}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company CarrierDunns_Number }","bold":true}," ",{$CarrierDunns_Number_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field19}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_section10_c2}
+											],
+				{END row_section10_0}
+						{BEGIN row_section10_1}
+				[
+																{BEGIN cellblock_section10_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_section10_c}
+			colSpan: {$colspan_section10_c},
+			{END colspan_section10_c}
+		
+						
+	
+	
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section11',
+			widths: ['*'],
+			body: [
+				[{text: 'Insurance', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section11_0}
+									"*", 
+								{END col_section11_0}
+															{BEGIN col_section11_1}
+									"*", 
+								{END col_section11_1}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section11_0}
+				[
+																{BEGIN cellblock_section11_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":[{"text":"{$jslabel tbl_company CarrierInsuranceCargoPolicyNumber }","bold":true}," ",{$CarrierInsuranceCargoPolicyNumber_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field20}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company CarrierInsuranceCargoAmount }","bold":true}," ",{$CarrierInsuranceCargoAmount_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field22}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company CarrierInsuranceCargoStartDate }","bold":true}," ",{$CarrierInsuranceCargoStartDate_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field23}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company CarrierInsuranceCargoExpiryDate }","bold":true}," ",{$CarrierInsuranceCargoExpiryDate_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field24}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_section11_c1}
+																							{BEGIN cellblock_section11_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":[{"text":"{$jslabel tbl_company CarrierInsuranceLiabilityPolicyNumber }","bold":true}," ",{$CarrierInsuranceLiabilityPolicyNumber_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field25}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company CarrierInsuranceLiabilityAmount }","bold":true}," ",{$CarrierInsuranceLiabilityAmount_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field26}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company CarrierInsuranceLiabilityStartDate }","bold":true}," ",{$CarrierInsuranceLiabilityStartDate_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field27}"},
+				
+				
+			{"text":[{"text":"{$jslabel tbl_company CarrierInsuranceLiabilityExpiryDate }","bold":true}," ",{$CarrierInsuranceLiabilityExpiryDate_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field28}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_section11_c}
+											],
+				{END row_section11_0}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_section10_c}
+																		{ 
+				cellId: 'c',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+							],
+				{END row_section10_1}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+ 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section6',
+			widths: ['*'],
+			body: [
+				[{text: 'Contacts', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section6_0}
+									"*", 
+								{END col_section6_0}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section6_0}
+				[
+																{BEGIN cellblock_section6_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			 {BEGIN details_tb_contacts}
+			{$displayDetailTable_tb_contacts }
+		{END details_tb_contacts},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_section6_c1}
+											],
+				{END row_section6_0}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+ 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section5',
+			widths: ['*'],
+			body: [
+				[{text: 'Attachments', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section5_0}
+									"*", 
+								{END col_section5_0}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section5_0}
+				[
+																{BEGIN cellblock_section5_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			 {BEGIN details_tbl_documents}
+			{$displayDetailTable_tbl_documents }
+		{END details_tbl_documents},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_section5_c3}
+											],
+				{END row_section5_0}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+ 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section7',
+			widths: ['*'],
+			body: [
+				[{text: 'Equipment', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section7_0}
+									"*", 
+								{END col_section7_0}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section7_0}
+				[
+																{BEGIN cellblock_section7_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			 {BEGIN details_tbl_company_equipment}
+			{$displayDetailTable_tbl_company_equipment }
+		{END details_tbl_company_equipment},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_section7_c1}
+											],
+				{END row_section7_0}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+ 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section8',
+			widths: ['*'],
+			body: [
+				[{text: 'Areas served', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section8_0}
+									"*", 
+								{END col_section8_0}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section8_0}
+				[
+																{BEGIN cellblock_section8_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			 {BEGIN details_tbl_company_areas1}
+			{$displayDetailTable_tbl_company_areas1 }
+		{END details_tbl_company_areas1},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_section8_c1}
+											],
+				{END row_section8_0}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+ 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section9',
+			widths: ['*'],
+			body: [
+				[{text: 'Users', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section9_0}
+									"*", 
+								{END col_section9_0}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section9_0}
+				[
+																{BEGIN cellblock_section9_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			 {BEGIN details_tbl_users}
+			{$displayDetailTable_tbl_users }
+		{END details_tbl_users},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_section9_c1}
+											],
+				{END row_section9_0}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_c3}
+											],
+				{END row_grid_0}
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_edit_save}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_edit_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_edit_close}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+																							{
+	cellId: 'c2',
+	col:0,
+	row:0,
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+			]
+}
+  

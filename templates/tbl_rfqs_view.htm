@@ -1,0 +1,2780 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="250px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expand" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main}			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="expand_menu_button" {$item_expand_menu_button} data-topcell-item-type="expand_menu_button" >
+				<span data-itemtype="expand_menu_button" data-itemid="expand_menu_button" {$item_expand_menu_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Collapse" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Show menu" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Login			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		User Profile		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Log out		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Admin Area		
+		</a>
+	</li>
+{END adminarea_link}
+							{BEGIN changepwd_link}
+	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
+				
+		Change password		
+		</a>
+	</li>
+{END changepwd_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>	
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel tbl_rfqs view}</h2>
+		</div>					</div>
+	</div>		
+{END top_block}
+						</div>
+					<div class="r-above">
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+				{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+						</div>
+					<div class="r-grid">
+										{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN companyID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_companyID}  r-vertical-field" data-fieldname="companyID" data-signal-error-for="companyID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="companyID" data-fieldname="companyID" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_companyID}">
+		
+		{BEGIN companyID_label}{$label tbl_rfqs companyID }{END companyID_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$companyID_value}	</div>
+
+		
+</div>
+
+
+{END companyID_fieldblock}
+											
+{BEGIN RFQStatusID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_RFQStatusID}  r-vertical-field" data-fieldname="RFQStatusID" data-signal-error-for="RFQStatusID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="RFQStatusID" data-fieldname="RFQStatusID" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_RFQStatusID}">
+		
+		{BEGIN RFQStatusID_label}{$label tbl_rfqs RFQStatusID }{END RFQStatusID_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$RFQStatusID_value}	</div>
+
+		
+</div>
+
+
+{END RFQStatusID_fieldblock}
+										</td>
+			{END cellblock_grid_c3}
+										</tr>
+										</tbody></table>
+				<div class="panel with-tabs panel-default form-tabs" data-itemtype="tabs" data-itemid="tabs" {$item_tabs} data-pageid="{$pageid}">
+	<div class="panel-heading">
+		<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section{$pageid}">
+					General				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section1{$pageid}">
+					References				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section2{$pageid}">
+					Shipper				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section3{$pageid}">
+					Consignee				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section6{$pageid}">
+					Bill To				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section8{$pageid}">
+					Dates				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section4{$pageid}">
+					Items				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section5{$pageid}">
+					Quotations				</a>
+			</li>
+									</ul>
+	</div>
+	<div class="panel-body">
+		<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="tab_section{$pageid}"> 
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section" id="form_section_{$pageid}" data-makeup="leftbar" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="3"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section_c1}
+<td
+	{$cell_section_c1}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c1" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN Inbound_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="edit_field_label" {$item_edit_field_label} data-pageid="{$pageid}" data-field="Inbound" data-fieldname="Inbound">{BEGIN Inbound_label}{$label tbl_rfqs Inbound }{END Inbound_label}</label>
+{END Inbound_fieldblock}
+	
+								</td>
+			{END cellblock_section_c1}
+			 
+																
+
+{BEGIN cellblock_section_c5}
+<td
+	{$cell_section_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN Inbound_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="Inbound" data-fieldname="Inbound" >
+		{$Inbound_value}	</div>
+{END Inbound_fieldblock}
+	
+								</td>
+			{END cellblock_section_c5}
+			 
+																
+
+{BEGIN cellblock_section_c10}
+<td
+	{$cell_section_c10}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c10" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN Inbound_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="Inbound{$id}" data-itemtype="edit_field_tooltip" data-itemid="edit_field_tooltip" {$item_edit_field_tooltip} data-pageid="{$pageid}" data-field="Inbound" data-fieldname="Inbound" >
+		<div data-helpfor="Inbound">
+			<div class="text-muted">{$tooltip tbl_rfqs Inbound }</div>
+		</div>
+	</div>
+{END Inbound_fieldblock}
+	
+								</td>
+			{END cellblock_section_c10}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c}
+<td
+	{$cell_section_c}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN PaymentTerms_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="edit_field_label1" {$item_edit_field_label1} data-pageid="{$pageid}" data-field="PaymentTerms" data-fieldname="PaymentTerms">{BEGIN PaymentTerms_label}{$label tbl_rfqs PaymentTerms }{END PaymentTerms_label}</label>
+{END PaymentTerms_fieldblock}
+	
+								</td>
+			{END cellblock_section_c}
+			 
+																
+
+{BEGIN cellblock_section_c6}
+<td
+	{$cell_section_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN PaymentTerms_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field58" {$item_integrated_edit_field58} data-pageid="{$pageid}" data-field="PaymentTerms" data-fieldname="PaymentTerms" >
+		{$PaymentTerms_value}	</div>
+{END PaymentTerms_fieldblock}
+	
+								</td>
+			{END cellblock_section_c6}
+			 
+																
+
+{BEGIN cellblock_section_c11}
+<td
+	{$cell_section_c11}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c11" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN PaymentTerms_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="PaymentTerms{$id}" data-itemtype="edit_field_tooltip" data-itemid="edit_field_tooltip1" {$item_edit_field_tooltip1} data-pageid="{$pageid}" data-field="PaymentTerms" data-fieldname="PaymentTerms" >
+		<div data-helpfor="PaymentTerms">
+			<div class="text-muted">{$tooltip tbl_rfqs PaymentTerms }</div>
+		</div>
+	</div>
+{END PaymentTerms_fieldblock}
+	
+								</td>
+			{END cellblock_section_c11}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c2}
+<td
+	{$cell_section_c2}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c2" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN Terms_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="edit_field_label2" {$item_edit_field_label2} data-pageid="{$pageid}" data-field="Terms" data-fieldname="Terms">{BEGIN Terms_label}{$label tbl_rfqs Terms }{END Terms_label}</label>
+{END Terms_fieldblock}
+	
+								</td>
+			{END cellblock_section_c2}
+			 
+																
+
+{BEGIN cellblock_section_c7}
+<td
+	{$cell_section_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN Terms_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field82" {$item_integrated_edit_field82} data-pageid="{$pageid}" data-field="Terms" data-fieldname="Terms" >
+		{$Terms_value}	</div>
+{END Terms_fieldblock}
+	
+								</td>
+			{END cellblock_section_c7}
+			 
+																
+
+{BEGIN cellblock_section_c12}
+<td
+	{$cell_section_c12}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c12" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN Terms_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="Terms{$id}" data-itemtype="edit_field_tooltip" data-itemid="edit_field_tooltip2" {$item_edit_field_tooltip2} data-pageid="{$pageid}" data-field="Terms" data-fieldname="Terms" >
+		<div data-helpfor="Terms">
+			<div class="text-muted">{$tooltip tbl_rfqs Terms }</div>
+		</div>
+	</div>
+{END Terms_fieldblock}
+	
+								</td>
+			{END cellblock_section_c12}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c3}
+<td
+	{$cell_section_c3}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c3" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN EquipmentType_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="edit_field_label3" {$item_edit_field_label3} data-pageid="{$pageid}" data-field="EquipmentType" data-fieldname="EquipmentType">{BEGIN EquipmentType_label}{$label tbl_rfqs EquipmentType }{END EquipmentType_label}</label>
+{END EquipmentType_fieldblock}
+	
+								</td>
+			{END cellblock_section_c3}
+			 
+																
+
+{BEGIN cellblock_section_c8}
+<td
+	{$cell_section_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c8" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN EquipmentType_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field59" {$item_integrated_edit_field59} data-pageid="{$pageid}" data-field="EquipmentType" data-fieldname="EquipmentType" >
+		{$EquipmentType_value}	</div>
+{END EquipmentType_fieldblock}
+	
+								</td>
+			{END cellblock_section_c8}
+			 
+																
+
+{BEGIN cellblock_section_c13}
+<td
+	{$cell_section_c13}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c13" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN EquipmentType_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="EquipmentType{$id}" data-itemtype="edit_field_tooltip" data-itemid="edit_field_tooltip3" {$item_edit_field_tooltip3} data-pageid="{$pageid}" data-field="EquipmentType" data-fieldname="EquipmentType" >
+		<div data-helpfor="EquipmentType">
+			<div class="text-muted">{$tooltip tbl_rfqs EquipmentType }</div>
+		</div>
+	</div>
+{END EquipmentType_fieldblock}
+	
+								</td>
+			{END cellblock_section_c13}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c4}
+<td
+	{$cell_section_c4}
+	class="r-align-right r-ori-vert"
+	
+			
+			data-cellId="section_c4" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN Instructions_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="edit_field_label4" {$item_edit_field_label4} data-pageid="{$pageid}" data-field="Instructions" data-fieldname="Instructions" data-before-same-field>{BEGIN Instructions_label}{$label tbl_rfqs Instructions }{END Instructions_label}</label>
+{END Instructions_fieldblock}
+											{BEGIN Instructions_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="Instructions{$id}" data-itemtype="edit_field_tooltip" data-itemid="edit_field_tooltip4" {$item_edit_field_tooltip4} data-pageid="{$pageid}" data-field="Instructions" data-fieldname="Instructions" >
+		<div data-helpfor="Instructions">
+			<div class="text-muted">{$tooltip tbl_rfqs Instructions }</div>
+		</div>
+	</div>
+{END Instructions_fieldblock}
+	
+								</td>
+			{END cellblock_section_c4}
+			 
+																
+
+{BEGIN cellblock_section_c9}
+<td
+	{$cell_section_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section_c9" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN Instructions_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field61" {$item_integrated_edit_field61} data-pageid="{$pageid}" data-field="Instructions" data-fieldname="Instructions" >
+		{$Instructions_value}	</div>
+{END Instructions_fieldblock}
+	
+								</td>
+			{END cellblock_section_c9}
+								</tr>
+			</tbody></table>
+{END section_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section1{$pageid}"> 
+			{BEGIN section1_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section1" id="form_section1_{$pageid}" data-makeup="leftbar" {$form_section1} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section1_c1}
+<td
+	{$cell_section1_c1}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section1_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN Routing_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Routing}  r-vertical-field" data-fieldname="Routing" data-signal-error-for="Routing{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field60" {$item_integrated_edit_field60} data-pageid="{$pageid}" data-field="Routing" data-fieldname="Routing" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Routing}">
+		
+		{BEGIN Routing_label}{$label tbl_rfqs Routing }{END Routing_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Routing_value}	</div>
+
+		
+</div>
+
+
+{END Routing_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c1}
+								</tr>
+			</tbody></table>
+{END section1_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section2{$pageid}"> 
+			{BEGIN section2_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section2" id="form_section2_{$pageid}" data-makeup="leftbar" {$form_section2} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section2_c1}
+<td
+	{$cell_section2_c1}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section2_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ShipperID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperID}  r-vertical-field" data-fieldname="ShipperID" data-signal-error-for="ShipperID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="ShipperID" data-fieldname="ShipperID" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_ShipperID}">
+		
+		{BEGIN ShipperID_label}{$label tbl_rfqs ShipperID }{END ShipperID_label}
+	</label>
+	<div class="" >
+		{$ShipperID_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END ShipperID_fieldblock}
+											
+{BEGIN ShipperReferenceNo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperReferenceNo}  r-vertical-field" data-fieldname="ShipperReferenceNo" data-signal-error-for="ShipperReferenceNo{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="ShipperReferenceNo" data-fieldname="ShipperReferenceNo" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_ShipperReferenceNo}">
+		
+		{BEGIN ShipperReferenceNo_label}{$label tbl_rfqs ShipperReferenceNo }{END ShipperReferenceNo_label}
+	</label>
+	<div class="" >
+		{$ShipperReferenceNo_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END ShipperReferenceNo_fieldblock}
+											
+{BEGIN ShipperName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperName}  r-vertical-field" data-fieldname="ShipperName" data-signal-error-for="ShipperName{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="ShipperName" data-fieldname="ShipperName" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_ShipperName}">
+		
+		{BEGIN ShipperName_label}{$label tbl_rfqs ShipperName }{END ShipperName_label}
+	</label>
+	<div class="" >
+		{$ShipperName_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END ShipperName_fieldblock}
+											
+{BEGIN ShipperAddress_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperAddress}  r-vertical-field" data-fieldname="ShipperAddress" data-signal-error-for="ShipperAddress{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field47" {$item_integrated_edit_field47} data-pageid="{$pageid}" data-field="ShipperAddress" data-fieldname="ShipperAddress" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_ShipperAddress}">
+		
+		{BEGIN ShipperAddress_label}{$label tbl_rfqs ShipperAddress }{END ShipperAddress_label}
+	</label>
+	<div class="" >
+		{$ShipperAddress_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END ShipperAddress_fieldblock}
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section1" {$item_section1} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section1_headattrs} data-toggle="collapse"   
+
+				href="#section1{$pageid}" aria-expanded="true" aria-controls="section1"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Hours of Operation			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section1_xtrclass}" role="tabpanel"  {$section_section1_attrs}
+
+				id="section1{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section9_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section9" id="form_section9_{$pageid}" data-makeup="leftbar" {$form_section9} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section9_c1}
+<td
+	{$cell_section9_c1}
+	class=""
+	
+			
+			data-cellId="section9_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ShipperHoursOpen_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperHoursOpen}  r-vertical-field" data-fieldname="ShipperHoursOpen" data-signal-error-for="ShipperHoursOpen{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field40" {$item_integrated_edit_field40} data-pageid="{$pageid}" data-field="ShipperHoursOpen" data-fieldname="ShipperHoursOpen" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ShipperHoursOpen}">
+		
+		{BEGIN ShipperHoursOpen_label}{$label tbl_rfqs ShipperHoursOpen }{END ShipperHoursOpen_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ShipperHoursOpen_value}	</div>
+
+		
+</div>
+
+
+{END ShipperHoursOpen_fieldblock}
+											
+{BEGIN ShipperHoursClose_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperHoursClose}  r-vertical-field" data-fieldname="ShipperHoursClose" data-signal-error-for="ShipperHoursClose{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field41" {$item_integrated_edit_field41} data-pageid="{$pageid}" data-field="ShipperHoursClose" data-fieldname="ShipperHoursClose" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ShipperHoursClose}">
+		
+		{BEGIN ShipperHoursClose_label}{$label tbl_rfqs ShipperHoursClose }{END ShipperHoursClose_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ShipperHoursClose_value}	</div>
+
+		
+</div>
+
+
+{END ShipperHoursClose_fieldblock}
+	
+								</td>
+			{END cellblock_section9_c1}
+								</tr>
+			</tbody></table>
+{END section9_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section3" {$item_section3} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section2_headattrs} data-toggle="collapse"   
+
+				href="#section2{$pageid}" aria-expanded="false" aria-controls="section2"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Address details			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse  {$section_section2_xtrclass}" role="tabpanel"  {$section_section2_attrs}
+
+				id="section2{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section11_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section11" id="form_section11_{$pageid}" data-makeup="leftbar" {$form_section11} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section11_c1}
+<td
+	{$cell_section11_c1}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section11_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ShipperAddress1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperAddress1}  r-vertical-field" data-fieldname="ShipperAddress1" data-signal-error-for="ShipperAddress1{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="ShipperAddress1" data-fieldname="ShipperAddress1" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ShipperAddress1}">
+		
+		{BEGIN ShipperAddress1_label}{$label tbl_rfqs ShipperAddress1 }{END ShipperAddress1_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ShipperAddress1_value}	</div>
+
+		
+</div>
+
+
+{END ShipperAddress1_fieldblock}
+											
+{BEGIN ShipperAddress2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperAddress2}  r-vertical-field" data-fieldname="ShipperAddress2" data-signal-error-for="ShipperAddress2{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="ShipperAddress2" data-fieldname="ShipperAddress2" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ShipperAddress2}">
+		
+		{BEGIN ShipperAddress2_label}{$label tbl_rfqs ShipperAddress2 }{END ShipperAddress2_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ShipperAddress2_value}	</div>
+
+		
+</div>
+
+
+{END ShipperAddress2_fieldblock}
+											
+{BEGIN ShipperCity_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperCity}  r-vertical-field" data-fieldname="ShipperCity" data-signal-error-for="ShipperCity{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="ShipperCity" data-fieldname="ShipperCity" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ShipperCity}">
+		
+		{BEGIN ShipperCity_label}{$label tbl_rfqs ShipperCity }{END ShipperCity_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ShipperCity_value}	</div>
+
+		
+</div>
+
+
+{END ShipperCity_fieldblock}
+											
+{BEGIN ShipperProvinceID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperProvinceID}  r-vertical-field" data-fieldname="ShipperProvinceID" data-signal-error-for="ShipperProvinceID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="ShipperProvinceID" data-fieldname="ShipperProvinceID" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ShipperProvinceID}">
+		
+		{BEGIN ShipperProvinceID_label}{$label tbl_rfqs ShipperProvinceID }{END ShipperProvinceID_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ShipperProvinceID_value}	</div>
+
+		
+</div>
+
+
+{END ShipperProvinceID_fieldblock}
+											
+{BEGIN ShipperCountryID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperCountryID}  r-vertical-field" data-fieldname="ShipperCountryID" data-signal-error-for="ShipperCountryID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="ShipperCountryID" data-fieldname="ShipperCountryID" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ShipperCountryID}">
+		
+		{BEGIN ShipperCountryID_label}{$label tbl_rfqs ShipperCountryID }{END ShipperCountryID_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ShipperCountryID_value}	</div>
+
+		
+</div>
+
+
+{END ShipperCountryID_fieldblock}
+											
+{BEGIN ShipperCountyName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperCountyName}  r-vertical-field" data-fieldname="ShipperCountyName" data-signal-error-for="ShipperCountyName{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="ShipperCountyName" data-fieldname="ShipperCountyName" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ShipperCountyName}">
+		
+		{BEGIN ShipperCountyName_label}{$label tbl_rfqs ShipperCountyName }{END ShipperCountyName_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ShipperCountyName_value}	</div>
+
+		
+</div>
+
+
+{END ShipperCountyName_fieldblock}
+											
+{BEGIN ShipperPostal_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperPostal}  r-vertical-field" data-fieldname="ShipperPostal" data-signal-error-for="ShipperPostal{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="ShipperPostal" data-fieldname="ShipperPostal" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ShipperPostal}">
+		
+		{BEGIN ShipperPostal_label}{$label tbl_rfqs ShipperPostal }{END ShipperPostal_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ShipperPostal_value}	</div>
+
+		
+</div>
+
+
+{END ShipperPostal_fieldblock}
+											
+{BEGIN ShipperLongitude_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperLongitude}  r-vertical-field" data-fieldname="ShipperLongitude" data-signal-error-for="ShipperLongitude{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="ShipperLongitude" data-fieldname="ShipperLongitude" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ShipperLongitude}">
+		
+		{BEGIN ShipperLongitude_label}{$label tbl_rfqs ShipperLongitude }{END ShipperLongitude_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ShipperLongitude_value}	</div>
+
+		
+</div>
+
+
+{END ShipperLongitude_fieldblock}
+											
+{BEGIN ShipperLatitude_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperLatitude}  r-vertical-field" data-fieldname="ShipperLatitude" data-signal-error-for="ShipperLatitude{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="ShipperLatitude" data-fieldname="ShipperLatitude" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ShipperLatitude}">
+		
+		{BEGIN ShipperLatitude_label}{$label tbl_rfqs ShipperLatitude }{END ShipperLatitude_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ShipperLatitude_value}	</div>
+
+		
+</div>
+
+
+{END ShipperLatitude_fieldblock}
+	
+								</td>
+			{END cellblock_section11_c1}
+								</tr>
+			</tbody></table>
+{END section11_block}
+		  </div>
+		</div>
+	</div>
+	
+								</td>
+			{END cellblock_section2_c1}
+			 
+																
+
+{BEGIN cellblock_section2_c}
+<td
+	{$cell_section2_c}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section2_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ShipperInstructions_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperInstructions}  r-vertical-field" data-fieldname="ShipperInstructions" data-signal-error-for="ShipperInstructions{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field37" {$item_integrated_edit_field37} data-pageid="{$pageid}" data-field="ShipperInstructions" data-fieldname="ShipperInstructions" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_ShipperInstructions}">
+		
+		{BEGIN ShipperInstructions_label}{$label tbl_rfqs ShipperInstructions }{END ShipperInstructions_label}
+	</label>
+	<div class="" >
+		{$ShipperInstructions_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END ShipperInstructions_fieldblock}
+											
+{BEGIN ShipperDirections_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperDirections}  r-vertical-field" data-fieldname="ShipperDirections" data-signal-error-for="ShipperDirections{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field42" {$item_integrated_edit_field42} data-pageid="{$pageid}" data-field="ShipperDirections" data-fieldname="ShipperDirections" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_ShipperDirections}">
+		
+		{BEGIN ShipperDirections_label}{$label tbl_rfqs ShipperDirections }{END ShipperDirections_label}
+	</label>
+	<div class="" >
+		{$ShipperDirections_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END ShipperDirections_fieldblock}
+											
+{BEGIN ShipperContactID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperContactID}  r-vertical-field" data-fieldname="ShipperContactID" data-signal-error-for="ShipperContactID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="ShipperContactID" data-fieldname="ShipperContactID" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_ShipperContactID}">
+		
+		{BEGIN ShipperContactID_label}{$label tbl_rfqs ShipperContactID }{END ShipperContactID_label}
+	</label>
+	<div class="" >
+		{$ShipperContactID_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END ShipperContactID_fieldblock}
+											
+{BEGIN ShipperPrimaryContactDetails_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperPrimaryContactDetails}  r-vertical-field" data-fieldname="ShipperPrimaryContactDetails" data-signal-error-for="ShipperPrimaryContactDetails{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field46" {$item_integrated_edit_field46} data-pageid="{$pageid}" data-field="ShipperPrimaryContactDetails" data-fieldname="ShipperPrimaryContactDetails" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_ShipperPrimaryContactDetails}">
+		
+		{BEGIN ShipperPrimaryContactDetails_label}{$label tbl_rfqs ShipperPrimaryContactDetails }{END ShipperPrimaryContactDetails_label}
+	</label>
+	<div class="" >
+		{$ShipperPrimaryContactDetails_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END ShipperPrimaryContactDetails_fieldblock}
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section" {$item_section} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section3_headattrs} data-toggle="collapse"   
+
+				href="#section3{$pageid}" aria-expanded="false" aria-controls="section3"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Contact Details			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse  {$section_section3_xtrclass}" role="tabpanel"  {$section_section3_attrs}
+
+				id="section3{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section7_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section7" id="form_section7_{$pageid}" data-makeup="leftbar" {$form_section7} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section7_c1}
+<td
+	{$cell_section7_c1}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section7_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ShipperContactName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperContactName}  r-vertical-field" data-fieldname="ShipperContactName" data-signal-error-for="ShipperContactName{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="ShipperContactName" data-fieldname="ShipperContactName" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ShipperContactName}">
+		
+		{BEGIN ShipperContactName_label}{$label tbl_rfqs ShipperContactName }{END ShipperContactName_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ShipperContactName_value}	</div>
+
+		
+</div>
+
+
+{END ShipperContactName_fieldblock}
+											
+{BEGIN ShipperContactTel_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperContactTel}  r-vertical-field" data-fieldname="ShipperContactTel" data-signal-error-for="ShipperContactTel{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="ShipperContactTel" data-fieldname="ShipperContactTel" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ShipperContactTel}">
+		
+		{BEGIN ShipperContactTel_label}{$label tbl_rfqs ShipperContactTel }{END ShipperContactTel_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ShipperContactTel_value}	</div>
+
+		
+</div>
+
+
+{END ShipperContactTel_fieldblock}
+											
+{BEGIN ShipperContactFax_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperContactFax}  r-vertical-field" data-fieldname="ShipperContactFax" data-signal-error-for="ShipperContactFax{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="ShipperContactFax" data-fieldname="ShipperContactFax" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ShipperContactFax}">
+		
+		{BEGIN ShipperContactFax_label}{$label tbl_rfqs ShipperContactFax }{END ShipperContactFax_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ShipperContactFax_value}	</div>
+
+		
+</div>
+
+
+{END ShipperContactFax_fieldblock}
+											
+{BEGIN ShipperContactEmail_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperContactEmail}  r-vertical-field" data-fieldname="ShipperContactEmail" data-signal-error-for="ShipperContactEmail{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="ShipperContactEmail" data-fieldname="ShipperContactEmail" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ShipperContactEmail}">
+		
+		{BEGIN ShipperContactEmail_label}{$label tbl_rfqs ShipperContactEmail }{END ShipperContactEmail_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ShipperContactEmail_value}	</div>
+
+		
+</div>
+
+
+{END ShipperContactEmail_fieldblock}
+	
+								</td>
+			{END cellblock_section7_c1}
+								</tr>
+			</tbody></table>
+{END section7_block}
+		  </div>
+		</div>
+	</div>
+	
+								</td>
+			{END cellblock_section2_c}
+								</tr>
+			</tbody></table>
+{END section2_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section3{$pageid}"> 
+			{BEGIN section3_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section3" id="form_section3_{$pageid}" data-makeup="leftbar" {$form_section3} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section3_c1}
+<td
+	{$cell_section3_c1}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section3_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ConsigneeID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeID}  r-vertical-field" data-fieldname="ConsigneeID" data-signal-error-for="ConsigneeID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="ConsigneeID" data-fieldname="ConsigneeID" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_ConsigneeID}">
+		
+		{BEGIN ConsigneeID_label}{$label tbl_rfqs ConsigneeID }{END ConsigneeID_label}
+	</label>
+	<div class="" >
+		{$ConsigneeID_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END ConsigneeID_fieldblock}
+											
+{BEGIN ConsigneeReferenceNo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeReferenceNo}  r-vertical-field" data-fieldname="ConsigneeReferenceNo" data-signal-error-for="ConsigneeReferenceNo{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="ConsigneeReferenceNo" data-fieldname="ConsigneeReferenceNo" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_ConsigneeReferenceNo}">
+		
+		{BEGIN ConsigneeReferenceNo_label}{$label tbl_rfqs ConsigneeReferenceNo }{END ConsigneeReferenceNo_label}
+	</label>
+	<div class="" >
+		{$ConsigneeReferenceNo_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END ConsigneeReferenceNo_fieldblock}
+											
+{BEGIN ConsigneeAddress_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeAddress}  r-vertical-field" data-fieldname="ConsigneeAddress" data-signal-error-for="ConsigneeAddress{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field48" {$item_integrated_edit_field48} data-pageid="{$pageid}" data-field="ConsigneeAddress" data-fieldname="ConsigneeAddress" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_ConsigneeAddress}">
+		
+		{BEGIN ConsigneeAddress_label}{$label tbl_rfqs ConsigneeAddress }{END ConsigneeAddress_label}
+	</label>
+	<div class="" >
+		{$ConsigneeAddress_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END ConsigneeAddress_fieldblock}
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section2" {$item_section2} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section4_headattrs} data-toggle="collapse"   
+
+				href="#section4{$pageid}" aria-expanded="true" aria-controls="section4"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Hours of operation			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section4_xtrclass}" role="tabpanel"  {$section_section4_attrs}
+
+				id="section4{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section10_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section10" id="form_section10_{$pageid}" data-makeup="leftbar" {$form_section10} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section10_c1}
+<td
+	{$cell_section10_c1}
+	class=""
+	
+			
+			data-cellId="section10_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ConsigneeHoursOpen_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeHoursOpen}  r-vertical-field" data-fieldname="ConsigneeHoursOpen" data-signal-error-for="ConsigneeHoursOpen{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field43" {$item_integrated_edit_field43} data-pageid="{$pageid}" data-field="ConsigneeHoursOpen" data-fieldname="ConsigneeHoursOpen" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ConsigneeHoursOpen}">
+		
+		{BEGIN ConsigneeHoursOpen_label}{$label tbl_rfqs ConsigneeHoursOpen }{END ConsigneeHoursOpen_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ConsigneeHoursOpen_value}	</div>
+
+		
+</div>
+
+
+{END ConsigneeHoursOpen_fieldblock}
+											
+{BEGIN ConsigneeHoursClose_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeHoursClose}  r-vertical-field" data-fieldname="ConsigneeHoursClose" data-signal-error-for="ConsigneeHoursClose{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field44" {$item_integrated_edit_field44} data-pageid="{$pageid}" data-field="ConsigneeHoursClose" data-fieldname="ConsigneeHoursClose" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ConsigneeHoursClose}">
+		
+		{BEGIN ConsigneeHoursClose_label}{$label tbl_rfqs ConsigneeHoursClose }{END ConsigneeHoursClose_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ConsigneeHoursClose_value}	</div>
+
+		
+</div>
+
+
+{END ConsigneeHoursClose_fieldblock}
+	
+								</td>
+			{END cellblock_section10_c1}
+								</tr>
+			</tbody></table>
+{END section10_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section4" {$item_section4} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section5_headattrs} data-toggle="collapse"   
+
+				href="#section5{$pageid}" aria-expanded="false" aria-controls="section5"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Address Details			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse  {$section_section5_xtrclass}" role="tabpanel"  {$section_section5_attrs}
+
+				id="section5{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section12_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section12" id="form_section12_{$pageid}" data-makeup="leftbar" {$form_section12} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section12_c1}
+<td
+	{$cell_section12_c1}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section12_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ConsigneeName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeName}  r-vertical-field" data-fieldname="ConsigneeName" data-signal-error-for="ConsigneeName{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="ConsigneeName" data-fieldname="ConsigneeName" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ConsigneeName}">
+		
+		{BEGIN ConsigneeName_label}{$label tbl_rfqs ConsigneeName }{END ConsigneeName_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ConsigneeName_value}	</div>
+
+		
+</div>
+
+
+{END ConsigneeName_fieldblock}
+											
+{BEGIN ConsigneeAddress1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeAddress1}  r-vertical-field" data-fieldname="ConsigneeAddress1" data-signal-error-for="ConsigneeAddress1{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="ConsigneeAddress1" data-fieldname="ConsigneeAddress1" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ConsigneeAddress1}">
+		
+		{BEGIN ConsigneeAddress1_label}{$label tbl_rfqs ConsigneeAddress1 }{END ConsigneeAddress1_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ConsigneeAddress1_value}	</div>
+
+		
+</div>
+
+
+{END ConsigneeAddress1_fieldblock}
+											
+{BEGIN ConsigneeAddress2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeAddress2}  r-vertical-field" data-fieldname="ConsigneeAddress2" data-signal-error-for="ConsigneeAddress2{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="ConsigneeAddress2" data-fieldname="ConsigneeAddress2" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ConsigneeAddress2}">
+		
+		{BEGIN ConsigneeAddress2_label}{$label tbl_rfqs ConsigneeAddress2 }{END ConsigneeAddress2_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ConsigneeAddress2_value}	</div>
+
+		
+</div>
+
+
+{END ConsigneeAddress2_fieldblock}
+											
+{BEGIN ConsigneeCity_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeCity}  r-vertical-field" data-fieldname="ConsigneeCity" data-signal-error-for="ConsigneeCity{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="ConsigneeCity" data-fieldname="ConsigneeCity" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ConsigneeCity}">
+		
+		{BEGIN ConsigneeCity_label}{$label tbl_rfqs ConsigneeCity }{END ConsigneeCity_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ConsigneeCity_value}	</div>
+
+		
+</div>
+
+
+{END ConsigneeCity_fieldblock}
+											
+{BEGIN ConsigneeCountryID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeCountryID}  r-vertical-field" data-fieldname="ConsigneeCountryID" data-signal-error-for="ConsigneeCountryID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="ConsigneeCountryID" data-fieldname="ConsigneeCountryID" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ConsigneeCountryID}">
+		
+		{BEGIN ConsigneeCountryID_label}{$label tbl_rfqs ConsigneeCountryID }{END ConsigneeCountryID_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ConsigneeCountryID_value}	</div>
+
+		
+</div>
+
+
+{END ConsigneeCountryID_fieldblock}
+											
+{BEGIN ConsigneeProvinceID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeProvinceID}  r-vertical-field" data-fieldname="ConsigneeProvinceID" data-signal-error-for="ConsigneeProvinceID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="ConsigneeProvinceID" data-fieldname="ConsigneeProvinceID" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ConsigneeProvinceID}">
+		
+		{BEGIN ConsigneeProvinceID_label}{$label tbl_rfqs ConsigneeProvinceID }{END ConsigneeProvinceID_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ConsigneeProvinceID_value}	</div>
+
+		
+</div>
+
+
+{END ConsigneeProvinceID_fieldblock}
+											
+{BEGIN ConsigneeCountyName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeCountyName}  r-vertical-field" data-fieldname="ConsigneeCountyName" data-signal-error-for="ConsigneeCountyName{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field29" {$item_integrated_edit_field29} data-pageid="{$pageid}" data-field="ConsigneeCountyName" data-fieldname="ConsigneeCountyName" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ConsigneeCountyName}">
+		
+		{BEGIN ConsigneeCountyName_label}{$label tbl_rfqs ConsigneeCountyName }{END ConsigneeCountyName_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ConsigneeCountyName_value}	</div>
+
+		
+</div>
+
+
+{END ConsigneeCountyName_fieldblock}
+											
+{BEGIN ConsigneePostal_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneePostal}  r-vertical-field" data-fieldname="ConsigneePostal" data-signal-error-for="ConsigneePostal{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field30" {$item_integrated_edit_field30} data-pageid="{$pageid}" data-field="ConsigneePostal" data-fieldname="ConsigneePostal" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ConsigneePostal}">
+		
+		{BEGIN ConsigneePostal_label}{$label tbl_rfqs ConsigneePostal }{END ConsigneePostal_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ConsigneePostal_value}	</div>
+
+		
+</div>
+
+
+{END ConsigneePostal_fieldblock}
+											
+{BEGIN ConsigneeLatitude_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeLatitude}  r-vertical-field" data-fieldname="ConsigneeLatitude" data-signal-error-for="ConsigneeLatitude{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field32" {$item_integrated_edit_field32} data-pageid="{$pageid}" data-field="ConsigneeLatitude" data-fieldname="ConsigneeLatitude" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ConsigneeLatitude}">
+		
+		{BEGIN ConsigneeLatitude_label}{$label tbl_rfqs ConsigneeLatitude }{END ConsigneeLatitude_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ConsigneeLatitude_value}	</div>
+
+		
+</div>
+
+
+{END ConsigneeLatitude_fieldblock}
+											
+{BEGIN ConsigneeLongitude_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeLongitude}  r-vertical-field" data-fieldname="ConsigneeLongitude" data-signal-error-for="ConsigneeLongitude{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field31" {$item_integrated_edit_field31} data-pageid="{$pageid}" data-field="ConsigneeLongitude" data-fieldname="ConsigneeLongitude" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ConsigneeLongitude}">
+		
+		{BEGIN ConsigneeLongitude_label}{$label tbl_rfqs ConsigneeLongitude }{END ConsigneeLongitude_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ConsigneeLongitude_value}	</div>
+
+		
+</div>
+
+
+{END ConsigneeLongitude_fieldblock}
+	
+								</td>
+			{END cellblock_section12_c1}
+								</tr>
+			</tbody></table>
+{END section12_block}
+		  </div>
+		</div>
+	</div>
+	
+								</td>
+			{END cellblock_section3_c1}
+			 
+																
+
+{BEGIN cellblock_section3_c2}
+<td
+	{$cell_section3_c2}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section3_c2" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ConsigneeInstructions_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeInstructions}  r-vertical-field" data-fieldname="ConsigneeInstructions" data-signal-error-for="ConsigneeInstructions{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field39" {$item_integrated_edit_field39} data-pageid="{$pageid}" data-field="ConsigneeInstructions" data-fieldname="ConsigneeInstructions" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_ConsigneeInstructions}">
+		
+		{BEGIN ConsigneeInstructions_label}{$label tbl_rfqs ConsigneeInstructions }{END ConsigneeInstructions_label}
+	</label>
+	<div class="" >
+		{$ConsigneeInstructions_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END ConsigneeInstructions_fieldblock}
+											
+{BEGIN ConsigneeDirections_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeDirections}  r-vertical-field" data-fieldname="ConsigneeDirections" data-signal-error-for="ConsigneeDirections{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field45" {$item_integrated_edit_field45} data-pageid="{$pageid}" data-field="ConsigneeDirections" data-fieldname="ConsigneeDirections" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_ConsigneeDirections}">
+		
+		{BEGIN ConsigneeDirections_label}{$label tbl_rfqs ConsigneeDirections }{END ConsigneeDirections_label}
+	</label>
+	<div class="" >
+		{$ConsigneeDirections_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END ConsigneeDirections_fieldblock}
+											
+{BEGIN ConsigneeContactID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeContactID}  r-vertical-field" data-fieldname="ConsigneeContactID" data-signal-error-for="ConsigneeContactID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="ConsigneeContactID" data-fieldname="ConsigneeContactID" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_ConsigneeContactID}">
+		
+		{BEGIN ConsigneeContactID_label}{$label tbl_rfqs ConsigneeContactID }{END ConsigneeContactID_label}
+	</label>
+	<div class="" >
+		{$ConsigneeContactID_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END ConsigneeContactID_fieldblock}
+											
+{BEGIN ConsigneeContactDetails_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeContactDetails}  r-vertical-field" data-fieldname="ConsigneeContactDetails" data-signal-error-for="ConsigneeContactDetails{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field49" {$item_integrated_edit_field49} data-pageid="{$pageid}" data-field="ConsigneeContactDetails" data-fieldname="ConsigneeContactDetails" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_ConsigneeContactDetails}">
+		
+		{BEGIN ConsigneeContactDetails_label}{$label tbl_rfqs ConsigneeContactDetails }{END ConsigneeContactDetails_label}
+	</label>
+	<div class="" >
+		{$ConsigneeContactDetails_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END ConsigneeContactDetails_fieldblock}
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section5" {$item_section5} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section6_headattrs} data-toggle="collapse"   
+
+				href="#section6{$pageid}" aria-expanded="false" aria-controls="section6"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Contact Details			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse  {$section_section6_xtrclass}" role="tabpanel"  {$section_section6_attrs}
+
+				id="section6{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section13_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section13" id="form_section13_{$pageid}" data-makeup="leftbar" {$form_section13} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section13_c1}
+<td
+	{$cell_section13_c1}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section13_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ConsigneeContactName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeContactName}  r-vertical-field" data-fieldname="ConsigneeContactName" data-signal-error-for="ConsigneeContactName{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field33" {$item_integrated_edit_field33} data-pageid="{$pageid}" data-field="ConsigneeContactName" data-fieldname="ConsigneeContactName" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ConsigneeContactName}">
+		
+		{BEGIN ConsigneeContactName_label}{$label tbl_rfqs ConsigneeContactName }{END ConsigneeContactName_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ConsigneeContactName_value}	</div>
+
+		
+</div>
+
+
+{END ConsigneeContactName_fieldblock}
+											
+{BEGIN ConsigneeContactTel_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeContactTel}  r-vertical-field" data-fieldname="ConsigneeContactTel" data-signal-error-for="ConsigneeContactTel{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field34" {$item_integrated_edit_field34} data-pageid="{$pageid}" data-field="ConsigneeContactTel" data-fieldname="ConsigneeContactTel" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ConsigneeContactTel}">
+		
+		{BEGIN ConsigneeContactTel_label}{$label tbl_rfqs ConsigneeContactTel }{END ConsigneeContactTel_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ConsigneeContactTel_value}	</div>
+
+		
+</div>
+
+
+{END ConsigneeContactTel_fieldblock}
+											
+{BEGIN ConsigneeContactFax_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeContactFax}  r-vertical-field" data-fieldname="ConsigneeContactFax" data-signal-error-for="ConsigneeContactFax{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field35" {$item_integrated_edit_field35} data-pageid="{$pageid}" data-field="ConsigneeContactFax" data-fieldname="ConsigneeContactFax" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ConsigneeContactFax}">
+		
+		{BEGIN ConsigneeContactFax_label}{$label tbl_rfqs ConsigneeContactFax }{END ConsigneeContactFax_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ConsigneeContactFax_value}	</div>
+
+		
+</div>
+
+
+{END ConsigneeContactFax_fieldblock}
+											
+{BEGIN ConsigneeContactEmail_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeContactEmail}  r-vertical-field" data-fieldname="ConsigneeContactEmail" data-signal-error-for="ConsigneeContactEmail{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field36" {$item_integrated_edit_field36} data-pageid="{$pageid}" data-field="ConsigneeContactEmail" data-fieldname="ConsigneeContactEmail" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ConsigneeContactEmail}">
+		
+		{BEGIN ConsigneeContactEmail_label}{$label tbl_rfqs ConsigneeContactEmail }{END ConsigneeContactEmail_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ConsigneeContactEmail_value}	</div>
+
+		
+</div>
+
+
+{END ConsigneeContactEmail_fieldblock}
+	
+								</td>
+			{END cellblock_section13_c1}
+								</tr>
+			</tbody></table>
+{END section13_block}
+		  </div>
+		</div>
+	</div>
+	
+								</td>
+			{END cellblock_section3_c2}
+								</tr>
+			</tbody></table>
+{END section3_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section6{$pageid}"> 
+			{BEGIN section6_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section6" id="form_section6_{$pageid}" data-makeup="leftbar" {$form_section6} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section6_c1}
+<td
+	{$cell_section6_c1}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section6_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN BillToPartyID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BillToPartyID}  r-vertical-field" data-fieldname="BillToPartyID" data-signal-error-for="BillToPartyID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field69" {$item_integrated_edit_field69} data-pageid="{$pageid}" data-field="BillToPartyID" data-fieldname="BillToPartyID" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_BillToPartyID}">
+		
+		{BEGIN BillToPartyID_label}{$label tbl_rfqs BillToPartyID }{END BillToPartyID_label}
+	</label>
+	<div class="" >
+		{$BillToPartyID_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END BillToPartyID_fieldblock}
+											
+{BEGIN BillToPartyReferenceNo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BillToPartyReferenceNo}  r-vertical-field" data-fieldname="BillToPartyReferenceNo" data-signal-error-for="BillToPartyReferenceNo{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field70" {$item_integrated_edit_field70} data-pageid="{$pageid}" data-field="BillToPartyReferenceNo" data-fieldname="BillToPartyReferenceNo" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_BillToPartyReferenceNo}">
+		
+		{BEGIN BillToPartyReferenceNo_label}{$label tbl_rfqs BillToPartyReferenceNo }{END BillToPartyReferenceNo_label}
+	</label>
+	<div class="" >
+		{$BillToPartyReferenceNo_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END BillToPartyReferenceNo_fieldblock}
+											
+{BEGIN BillToAddress_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BillToAddress}  r-vertical-field" data-fieldname="BillToAddress" data-signal-error-for="BillToAddress{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field53" {$item_integrated_edit_field53} data-pageid="{$pageid}" data-field="BillToAddress" data-fieldname="BillToAddress" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_BillToAddress}">
+		
+		{BEGIN BillToAddress_label}{$label tbl_rfqs BillToAddress }{END BillToAddress_label}
+	</label>
+	<div class="" >
+		{$BillToAddress_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END BillToAddress_fieldblock}
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section6" {$item_section6} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section7_headattrs} data-toggle="collapse"   
+
+				href="#section7{$pageid}" aria-expanded="true" aria-controls="section7"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Address Details			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section7_xtrclass}" role="tabpanel"  {$section_section7_attrs}
+
+				id="section7{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section14_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section14" id="form_section14_{$pageid}" data-makeup="leftbar" {$form_section14} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section14_c1}
+<td
+	{$cell_section14_c1}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section14_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN BillToPartyName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BillToPartyName}  r-vertical-field" data-fieldname="BillToPartyName" data-signal-error-for="BillToPartyName{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field71" {$item_integrated_edit_field71} data-pageid="{$pageid}" data-field="BillToPartyName" data-fieldname="BillToPartyName" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_BillToPartyName}">
+		
+		{BEGIN BillToPartyName_label}{$label tbl_rfqs BillToPartyName }{END BillToPartyName_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$BillToPartyName_value}	</div>
+
+		
+</div>
+
+
+{END BillToPartyName_fieldblock}
+											
+{BEGIN BillToPartyAddress1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BillToPartyAddress1}  r-vertical-field" data-fieldname="BillToPartyAddress1" data-signal-error-for="BillToPartyAddress1{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field72" {$item_integrated_edit_field72} data-pageid="{$pageid}" data-field="BillToPartyAddress1" data-fieldname="BillToPartyAddress1" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_BillToPartyAddress1}">
+		
+		{BEGIN BillToPartyAddress1_label}{$label tbl_rfqs BillToPartyAddress1 }{END BillToPartyAddress1_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$BillToPartyAddress1_value}	</div>
+
+		
+</div>
+
+
+{END BillToPartyAddress1_fieldblock}
+											
+{BEGIN BillToPartyAddress2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BillToPartyAddress2}  r-vertical-field" data-fieldname="BillToPartyAddress2" data-signal-error-for="BillToPartyAddress2{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field73" {$item_integrated_edit_field73} data-pageid="{$pageid}" data-field="BillToPartyAddress2" data-fieldname="BillToPartyAddress2" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_BillToPartyAddress2}">
+		
+		{BEGIN BillToPartyAddress2_label}{$label tbl_rfqs BillToPartyAddress2 }{END BillToPartyAddress2_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$BillToPartyAddress2_value}	</div>
+
+		
+</div>
+
+
+{END BillToPartyAddress2_fieldblock}
+											
+{BEGIN BillToPartyCity_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BillToPartyCity}  r-vertical-field" data-fieldname="BillToPartyCity" data-signal-error-for="BillToPartyCity{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field74" {$item_integrated_edit_field74} data-pageid="{$pageid}" data-field="BillToPartyCity" data-fieldname="BillToPartyCity" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_BillToPartyCity}">
+		
+		{BEGIN BillToPartyCity_label}{$label tbl_rfqs BillToPartyCity }{END BillToPartyCity_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$BillToPartyCity_value}	</div>
+
+		
+</div>
+
+
+{END BillToPartyCity_fieldblock}
+											
+{BEGIN BillToPartyCountryID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BillToPartyCountryID}  r-vertical-field" data-fieldname="BillToPartyCountryID" data-signal-error-for="BillToPartyCountryID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field76" {$item_integrated_edit_field76} data-pageid="{$pageid}" data-field="BillToPartyCountryID" data-fieldname="BillToPartyCountryID" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_BillToPartyCountryID}">
+		
+		{BEGIN BillToPartyCountryID_label}{$label tbl_rfqs BillToPartyCountryID }{END BillToPartyCountryID_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$BillToPartyCountryID_value}	</div>
+
+		
+</div>
+
+
+{END BillToPartyCountryID_fieldblock}
+											
+{BEGIN BillToPartyProvinceID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BillToPartyProvinceID}  r-vertical-field" data-fieldname="BillToPartyProvinceID" data-signal-error-for="BillToPartyProvinceID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field75" {$item_integrated_edit_field75} data-pageid="{$pageid}" data-field="BillToPartyProvinceID" data-fieldname="BillToPartyProvinceID" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_BillToPartyProvinceID}">
+		
+		{BEGIN BillToPartyProvinceID_label}{$label tbl_rfqs BillToPartyProvinceID }{END BillToPartyProvinceID_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$BillToPartyProvinceID_value}	</div>
+
+		
+</div>
+
+
+{END BillToPartyProvinceID_fieldblock}
+											
+{BEGIN BillToPartyPostal_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BillToPartyPostal}  r-vertical-field" data-fieldname="BillToPartyPostal" data-signal-error-for="BillToPartyPostal{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field77" {$item_integrated_edit_field77} data-pageid="{$pageid}" data-field="BillToPartyPostal" data-fieldname="BillToPartyPostal" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_BillToPartyPostal}">
+		
+		{BEGIN BillToPartyPostal_label}{$label tbl_rfqs BillToPartyPostal }{END BillToPartyPostal_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$BillToPartyPostal_value}	</div>
+
+		
+</div>
+
+
+{END BillToPartyPostal_fieldblock}
+	
+								</td>
+			{END cellblock_section14_c1}
+								</tr>
+			</tbody></table>
+{END section14_block}
+		  </div>
+		</div>
+	</div>
+	
+								</td>
+			{END cellblock_section6_c1}
+			 
+																
+
+{BEGIN cellblock_section6_c}
+<td
+	{$cell_section6_c}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section6_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN BillToContactID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BillToContactID}  r-vertical-field" data-fieldname="BillToContactID" data-signal-error-for="BillToContactID{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field38" {$item_integrated_edit_field38} data-pageid="{$pageid}" data-field="BillToContactID" data-fieldname="BillToContactID" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_BillToContactID}">
+		
+		{BEGIN BillToContactID_label}{$label tbl_rfqs BillToContactID }{END BillToContactID_label}
+	</label>
+	<div class="" >
+		{$BillToContactID_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END BillToContactID_fieldblock}
+											
+{BEGIN BillToContactDetails_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BillToContactDetails}  r-vertical-field" data-fieldname="BillToContactDetails" data-signal-error-for="BillToContactDetails{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field56" {$item_integrated_edit_field56} data-pageid="{$pageid}" data-field="BillToContactDetails" data-fieldname="BillToContactDetails" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_BillToContactDetails}">
+		
+		{BEGIN BillToContactDetails_label}{$label tbl_rfqs BillToContactDetails }{END BillToContactDetails_label}
+	</label>
+	<div class="" >
+		{$BillToContactDetails_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END BillToContactDetails_fieldblock}
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section7" {$item_section7} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section8_headattrs} data-toggle="collapse"   
+
+				href="#section8{$pageid}" aria-expanded="false" aria-controls="section8"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Contact Details			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse  {$section_section8_xtrclass}" role="tabpanel"  {$section_section8_attrs}
+
+				id="section8{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section15_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section15" id="form_section15_{$pageid}" data-makeup="leftbar" {$form_section15} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section15_c1}
+<td
+	{$cell_section15_c1}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section15_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN BillToPartyContactName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BillToPartyContactName}  r-vertical-field" data-fieldname="BillToPartyContactName" data-signal-error-for="BillToPartyContactName{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field78" {$item_integrated_edit_field78} data-pageid="{$pageid}" data-field="BillToPartyContactName" data-fieldname="BillToPartyContactName" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_BillToPartyContactName}">
+		
+		{BEGIN BillToPartyContactName_label}{$label tbl_rfqs BillToPartyContactName }{END BillToPartyContactName_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$BillToPartyContactName_value}	</div>
+
+		
+</div>
+
+
+{END BillToPartyContactName_fieldblock}
+											
+{BEGIN BillToPartyContactTel_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BillToPartyContactTel}  r-vertical-field" data-fieldname="BillToPartyContactTel" data-signal-error-for="BillToPartyContactTel{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field79" {$item_integrated_edit_field79} data-pageid="{$pageid}" data-field="BillToPartyContactTel" data-fieldname="BillToPartyContactTel" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_BillToPartyContactTel}">
+		
+		{BEGIN BillToPartyContactTel_label}{$label tbl_rfqs BillToPartyContactTel }{END BillToPartyContactTel_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$BillToPartyContactTel_value}	</div>
+
+		
+</div>
+
+
+{END BillToPartyContactTel_fieldblock}
+											
+{BEGIN BillToPartyContactFax_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BillToPartyContactFax}  r-vertical-field" data-fieldname="BillToPartyContactFax" data-signal-error-for="BillToPartyContactFax{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field80" {$item_integrated_edit_field80} data-pageid="{$pageid}" data-field="BillToPartyContactFax" data-fieldname="BillToPartyContactFax" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_BillToPartyContactFax}">
+		
+		{BEGIN BillToPartyContactFax_label}{$label tbl_rfqs BillToPartyContactFax }{END BillToPartyContactFax_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$BillToPartyContactFax_value}	</div>
+
+		
+</div>
+
+
+{END BillToPartyContactFax_fieldblock}
+											
+{BEGIN BillToPartyContactEmail_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BillToPartyContactEmail}  r-vertical-field" data-fieldname="BillToPartyContactEmail" data-signal-error-for="BillToPartyContactEmail{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field81" {$item_integrated_edit_field81} data-pageid="{$pageid}" data-field="BillToPartyContactEmail" data-fieldname="BillToPartyContactEmail" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_BillToPartyContactEmail}">
+		
+		{BEGIN BillToPartyContactEmail_label}{$label tbl_rfqs BillToPartyContactEmail }{END BillToPartyContactEmail_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$BillToPartyContactEmail_value}	</div>
+
+		
+</div>
+
+
+{END BillToPartyContactEmail_fieldblock}
+	
+								</td>
+			{END cellblock_section15_c1}
+								</tr>
+			</tbody></table>
+{END section15_block}
+		  </div>
+		</div>
+	</div>
+	
+								</td>
+			{END cellblock_section6_c}
+								</tr>
+			</tbody></table>
+{END section6_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section8{$pageid}"> 
+			{BEGIN section8_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section8" id="form_section8_{$pageid}" data-makeup="leftbar" {$form_section8} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section8_c1}
+<td
+	{$cell_section8_c1}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="section8_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN RFQResponseDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_RFQResponseDate}  r-vertical-field" data-fieldname="RFQResponseDate" data-signal-error-for="RFQResponseDate{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field55" {$item_integrated_edit_field55} data-pageid="{$pageid}" data-field="RFQResponseDate" data-fieldname="RFQResponseDate" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_RFQResponseDate}">
+		
+		{BEGIN RFQResponseDate_label}{$label tbl_rfqs RFQResponseDate }{END RFQResponseDate_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$RFQResponseDate_value}	</div>
+
+		
+</div>
+
+
+{END RFQResponseDate_fieldblock}
+											
+{BEGIN PickupDateExpected_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PickupDateExpected}  r-vertical-field" data-fieldname="PickupDateExpected" data-signal-error-for="PickupDateExpected{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field52" {$item_integrated_edit_field52} data-pageid="{$pageid}" data-field="PickupDateExpected" data-fieldname="PickupDateExpected" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_PickupDateExpected}">
+		
+		{BEGIN PickupDateExpected_label}{$label tbl_rfqs PickupDateExpected }{END PickupDateExpected_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$PickupDateExpected_value}	</div>
+
+		
+</div>
+
+
+{END PickupDateExpected_fieldblock}
+											
+{BEGIN DeliveryDateExpected_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DeliveryDateExpected}  r-vertical-field" data-fieldname="DeliveryDateExpected" data-signal-error-for="DeliveryDateExpected{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field54" {$item_integrated_edit_field54} data-pageid="{$pageid}" data-field="DeliveryDateExpected" data-fieldname="DeliveryDateExpected" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_DeliveryDateExpected}">
+		
+		{BEGIN DeliveryDateExpected_label}{$label tbl_rfqs DeliveryDateExpected }{END DeliveryDateExpected_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$DeliveryDateExpected_value}	</div>
+
+		
+</div>
+
+
+{END DeliveryDateExpected_fieldblock}
+	
+								</td>
+			{END cellblock_section8_c1}
+								</tr>
+			</tbody></table>
+{END section8_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section4{$pageid}"> 
+			{BEGIN section4_block}
+
+
+
+
+ 
+	 
+												
+{BEGIN details_tbl_rfq_items}
+<div data-itemtype="details_preview" data-itemid="details_preview1" {$item_details_preview1} data-pageid="{$pageid}" class="bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+							{$caption tbl_rfq_items }				
+							<span>
+					{$detailslButtons_tbl_rfq_items}
+																				</span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_tbl_rfq_items}
+		</div>
+	</div>
+</div>
+{END details_tbl_rfq_items}
+	
+				{END section4_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section5{$pageid}"> 
+			{BEGIN section5_block}
+
+
+
+
+ 
+	 
+												
+{BEGIN details_tbl_rfq_carrier_quote}
+<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" class="bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+							{$caption tbl_rfq_carrier_quote }				
+							<span>
+					{$detailslButtons_tbl_rfq_carrier_quote}
+																				</span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_tbl_rfq_carrier_quote}
+		</div>
+	</div>
+</div>
+{END details_tbl_rfq_carrier_quote}
+	
+				{END section5_block}
+						</div>
+				</div>
+	</div>
+</div>  	
+				{END grid_block}
+						</div>
+					<div class="r-below">
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	
+">
+		 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Close window			</a>
+</span>
+{END close_button}
+		</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	
+">
+		 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="tbl_rfqs_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Edit		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+						</div>
+					{$footer}
+				</div>	
+			</div>	
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

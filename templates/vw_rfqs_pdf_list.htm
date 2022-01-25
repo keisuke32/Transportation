@@ -1,0 +1,2540 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="250px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expand" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main}			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
+
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle btn-sm )" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Search in			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Show options</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>all conditions</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>any condition</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>hide</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_CarrierAddress}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_CarrierAddress}" {$filterRow_attrs_CarrierAddress}>
+			<label>{$label vw_rfqs_pdf CarrierAddress }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_CarrierAddress}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_CarrierAddress}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_CarrierAddress}</span>
+						</div>
+		{END searchCtrlBlock_CarrierAddress}
+																{BEGIN searchCtrlBlock_SalesRepPrimaryPhone}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_SalesRepPrimaryPhone}" {$filterRow_attrs_SalesRepPrimaryPhone}>
+			<label>{$label vw_rfqs_pdf SalesRepPrimaryPhone }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_SalesRepPrimaryPhone}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_SalesRepPrimaryPhone}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_SalesRepPrimaryPhone}</span>
+						</div>
+		{END searchCtrlBlock_SalesRepPrimaryPhone}
+																{BEGIN searchCtrlBlock_SalesRepEmail}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_SalesRepEmail}" {$filterRow_attrs_SalesRepEmail}>
+			<label>{$label vw_rfqs_pdf SalesRepEmail }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_SalesRepEmail}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_SalesRepEmail}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_SalesRepEmail}</span>
+						</div>
+		{END searchCtrlBlock_SalesRepEmail}
+																{BEGIN searchCtrlBlock_SalesRepName}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_SalesRepName}" {$filterRow_attrs_SalesRepName}>
+			<label>{$label vw_rfqs_pdf SalesRepName }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_SalesRepName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_SalesRepName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_SalesRepName}</span>
+						</div>
+		{END searchCtrlBlock_SalesRepName}
+																{BEGIN searchCtrlBlock_DeliveryDate}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_DeliveryDate}" {$filterRow_attrs_DeliveryDate}>
+			<label>{$label vw_rfqs_pdf DeliveryDate }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_DeliveryDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_DeliveryDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_DeliveryDate}</span>
+						</div>
+		{END searchCtrlBlock_DeliveryDate}
+																{BEGIN searchCtrlBlock_PickupDate}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_PickupDate}" {$filterRow_attrs_PickupDate}>
+			<label>{$label vw_rfqs_pdf PickupDate }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_PickupDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_PickupDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_PickupDate}</span>
+						</div>
+		{END searchCtrlBlock_PickupDate}
+																{BEGIN searchCtrlBlock_ShipperName}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ShipperName}" {$filterRow_attrs_ShipperName}>
+			<label>{$label vw_rfqs_pdf ShipperName }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ShipperName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ShipperName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ShipperName}</span>
+						</div>
+		{END searchCtrlBlock_ShipperName}
+																{BEGIN searchCtrlBlock_ShipperAddress}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ShipperAddress}" {$filterRow_attrs_ShipperAddress}>
+			<label>{$label vw_rfqs_pdf ShipperAddress }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ShipperAddress}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ShipperAddress}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ShipperAddress}</span>
+						</div>
+		{END searchCtrlBlock_ShipperAddress}
+																{BEGIN searchCtrlBlock_RFQResponseDate}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_RFQResponseDate}" {$filterRow_attrs_RFQResponseDate}>
+			<label>{$label vw_rfqs_pdf RFQResponseDate }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_RFQResponseDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_RFQResponseDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_RFQResponseDate}</span>
+						</div>
+		{END searchCtrlBlock_RFQResponseDate}
+																{BEGIN searchCtrlBlock_IssueDate}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_IssueDate}" {$filterRow_attrs_IssueDate}>
+			<label>{$label vw_rfqs_pdf IssueDate }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_IssueDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_IssueDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_IssueDate}</span>
+						</div>
+		{END searchCtrlBlock_IssueDate}
+																{BEGIN searchCtrlBlock_Instructions}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_Instructions}" {$filterRow_attrs_Instructions}>
+			<label>{$label vw_rfqs_pdf Instructions }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_Instructions}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_Instructions}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_Instructions}</span>
+						</div>
+		{END searchCtrlBlock_Instructions}
+																{BEGIN searchCtrlBlock_ID}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ID}" {$filterRow_attrs_ID}>
+			<label>{$label vw_rfqs_pdf ID }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ID}</span>
+						</div>
+		{END searchCtrlBlock_ID}
+																{BEGIN searchCtrlBlock_ExpiryDate}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ExpiryDate}" {$filterRow_attrs_ExpiryDate}>
+			<label>{$label vw_rfqs_pdf ExpiryDate }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ExpiryDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ExpiryDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ExpiryDate}</span>
+						</div>
+		{END searchCtrlBlock_ExpiryDate}
+																{BEGIN searchCtrlBlock_EquipmentType}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_EquipmentType}" {$filterRow_attrs_EquipmentType}>
+			<label>{$label vw_rfqs_pdf EquipmentType }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_EquipmentType}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_EquipmentType}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_EquipmentType}</span>
+						</div>
+		{END searchCtrlBlock_EquipmentType}
+																{BEGIN searchCtrlBlock_EffectiveDate}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_EffectiveDate}" {$filterRow_attrs_EffectiveDate}>
+			<label>{$label vw_rfqs_pdf EffectiveDate }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_EffectiveDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_EffectiveDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_EffectiveDate}</span>
+						</div>
+		{END searchCtrlBlock_EffectiveDate}
+																{BEGIN searchCtrlBlock_Description}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_Description}" {$filterRow_attrs_Description}>
+			<label>{$label vw_rfqs_pdf Description }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_Description}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_Description}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_Description}</span>
+						</div>
+		{END searchCtrlBlock_Description}
+																{BEGIN searchCtrlBlock_CustomerID}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_CustomerID}" {$filterRow_attrs_CustomerID}>
+			<label>{$label vw_rfqs_pdf CustomerID }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_CustomerID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_CustomerID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_CustomerID}</span>
+						</div>
+		{END searchCtrlBlock_CustomerID}
+																{BEGIN searchCtrlBlock_ContactDetails}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ContactDetails}" {$filterRow_attrs_ContactDetails}>
+			<label>{$label vw_rfqs_pdf ContactDetails }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ContactDetails}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ContactDetails}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ContactDetails}</span>
+						</div>
+		{END searchCtrlBlock_ContactDetails}
+																{BEGIN searchCtrlBlock_ConsigneeName}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ConsigneeName}" {$filterRow_attrs_ConsigneeName}>
+			<label>{$label vw_rfqs_pdf ConsigneeName }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ConsigneeName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ConsigneeName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ConsigneeName}</span>
+						</div>
+		{END searchCtrlBlock_ConsigneeName}
+																{BEGIN searchCtrlBlock_ConsigneeAddress}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ConsigneeAddress}" {$filterRow_attrs_ConsigneeAddress}>
+			<label>{$label vw_rfqs_pdf ConsigneeAddress }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ConsigneeAddress}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ConsigneeAddress}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ConsigneeAddress}</span>
+						</div>
+		{END searchCtrlBlock_ConsigneeAddress}
+																{BEGIN searchCtrlBlock_CarrierPhone}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_CarrierPhone}" {$filterRow_attrs_CarrierPhone}>
+			<label>{$label vw_rfqs_pdf CarrierPhone }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_CarrierPhone}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_CarrierPhone}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_CarrierPhone}</span>
+						</div>
+		{END searchCtrlBlock_CarrierPhone}
+																{BEGIN searchCtrlBlock_CarrierID}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_CarrierID}" {$filterRow_attrs_CarrierID}>
+			<label>{$label vw_rfqs_pdf CarrierID }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_CarrierID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_CarrierID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_CarrierID}</span>
+						</div>
+		{END searchCtrlBlock_CarrierID}
+																{BEGIN searchCtrlBlock_CarrierFax}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_CarrierFax}" {$filterRow_attrs_CarrierFax}>
+			<label>{$label vw_rfqs_pdf CarrierFax }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_CarrierFax}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_CarrierFax}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_CarrierFax}</span>
+						</div>
+		{END searchCtrlBlock_CarrierFax}
+																{BEGIN searchCtrlBlock_CarrierCompanyID}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_CarrierCompanyID}" {$filterRow_attrs_CarrierCompanyID}>
+			<label>{$label vw_rfqs_pdf CarrierCompanyID }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_CarrierCompanyID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_CarrierCompanyID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_CarrierCompanyID}</span>
+						</div>
+		{END searchCtrlBlock_CarrierCompanyID}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary btn-sm" id="searchButton{$id}" {$searchbutton_attrs}>Search</button>
+		<button class="btn btn-default btn-sm" {$showAllCont_attrs} {$showallbutton_attrs}>Show all</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="expand_menu_button" {$item_expand_menu_button} data-topcell-item-type="expand_menu_button" >
+				<span data-itemtype="expand_menu_button" data-itemid="expand_menu_button" {$item_expand_menu_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Collapse" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Show menu" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Show all">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-cog"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_selected" data-itemid="edit_selected" {$item_edit_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$editselectedlink_attrs} {$editselectedlink_span}  title="" >
+				
+		Edit selected		
+		</a>
+	</li>
+							<li role="separator" class="divider"></li>								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="vw_rfqs_pdf_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		Advanced search		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Show search panel		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Hide search panel		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Login			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		User Profile		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Log out		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Admin Area		
+		</a>
+	</li>
+{END adminarea_link}
+							{BEGIN changepwd_link}
+	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
+				
+		Change password		
+		</a>
+	</li>
+{END changepwd_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>	
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	</div>		
+{END top_block}
+						</div>
+					<div class="r-above">
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN saveall_link}
+<span data-itemtype="inline_save_all" data-itemid="inline_save_all" {$item_inline_save_all} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savealllink_attrs} {$savealllink_span} >
+							Save all			</a>
+</span>
+{END saveall_link}
+	 
+		{BEGIN cancelall_link}
+<span data-itemtype="inline_cancel_all" data-itemid="inline_cancel_all" {$item_inline_cancel_all} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$cancelalllink_attrs} {$cancelalllink_span} >
+							Cancel			</a>
+</span>
+{END cancelall_link}
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$details_found_labeldetails_found}
+</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>		</div>					</div>
+	</div>		
+{END above-grid_block}
+						</div>
+					<div class="r-grid">
+										{BEGIN grid_block}
+{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ID"]:before {
+		content: "{$label vw_rfqs_pdf ID}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="CustomerID"]:before {
+		content: "{$label vw_rfqs_pdf CustomerID}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="EffectiveDate"]:before {
+		content: "{$label vw_rfqs_pdf EffectiveDate}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ExpiryDate"]:before {
+		content: "{$label vw_rfqs_pdf ExpiryDate}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="IssueDate"]:before {
+		content: "{$label vw_rfqs_pdf IssueDate}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ShipperName"]:before {
+		content: "{$label vw_rfqs_pdf ShipperName}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="PickupDate"]:before {
+		content: "{$label vw_rfqs_pdf PickupDate}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="DeliveryDate"]:before {
+		content: "{$label vw_rfqs_pdf DeliveryDate}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ShipperAddress"]:before {
+		content: "{$label vw_rfqs_pdf ShipperAddress}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ConsigneeName"]:before {
+		content: "{$label vw_rfqs_pdf ConsigneeName}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ConsigneeAddress"]:before {
+		content: "{$label vw_rfqs_pdf ConsigneeAddress}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="CarrierID"]:before {
+		content: "{$label vw_rfqs_pdf CarrierID}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Instructions"]:before {
+		content: "{$label vw_rfqs_pdf Instructions}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="RFQResponseDate"]:before {
+		content: "{$label vw_rfqs_pdf RFQResponseDate}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Description"]:before {
+		content: "{$label vw_rfqs_pdf Description}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="CarrierCompanyID"]:before {
+		content: "{$label vw_rfqs_pdf CarrierCompanyID}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="CarrierAddress"]:before {
+		content: "{$label vw_rfqs_pdf CarrierAddress}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="CarrierPhone"]:before {
+		content: "{$label vw_rfqs_pdf CarrierPhone}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="CarrierFax"]:before {
+		content: "{$label vw_rfqs_pdf CarrierFax}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="EquipmentType"]:before {
+		content: "{$label vw_rfqs_pdf EquipmentType}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ContactDetails"]:before {
+		content: "{$label vw_rfqs_pdf ContactDetails}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="SalesRepName"]:before {
+		content: "{$label vw_rfqs_pdf SalesRepName}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="SalesRepEmail"]:before {
+		content: "{$label vw_rfqs_pdf SalesRepEmail}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="SalesRepPrimaryPhone"]:before {
+		content: "{$label vw_rfqs_pdf SalesRepPrimaryPhone}";
+	}
+	}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes} r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="1"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+				 
+					{BEGIN cellblock_grid_headcell_checkbox}
+	<th
+	
+	{$cell_grid_headcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head" {$item_grid_checkbox_head} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkboxheader_attrs}>
+</span>
+{END checkbox_column}
+	
+	</th>
+	{END cellblock_grid_headcell_checkbox}
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ID_class}
+			"
+
+			data-field="ID"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ID_fieldheadercolumn}
+	{BEGIN ID_fieldheader}
+	<SPAN {$ID_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ID" data-fieldname="ID">
+	{$label vw_rfqs_pdf ID }	{$arrow_icon_ID}
+	</SPAN>
+	{END ID_fieldheader}
+{END ID_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CustomerID_class}
+			"
+
+			data-field="CustomerID"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CustomerID_fieldheadercolumn}
+	{BEGIN CustomerID_fieldheader}
+	<SPAN {$CustomerID_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CustomerID" data-fieldname="CustomerID">
+	{$label vw_rfqs_pdf CustomerID }	{$arrow_icon_CustomerID}
+	</SPAN>
+	{END CustomerID_fieldheader}
+{END CustomerID_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$EffectiveDate_class}
+			"
+
+			data-field="EffectiveDate"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN EffectiveDate_fieldheadercolumn}
+	{BEGIN EffectiveDate_fieldheader}
+	<SPAN {$EffectiveDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="EffectiveDate" data-fieldname="EffectiveDate">
+	{$label vw_rfqs_pdf EffectiveDate }	{$arrow_icon_EffectiveDate}
+	</SPAN>
+	{END EffectiveDate_fieldheader}
+{END EffectiveDate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ExpiryDate_class}
+			"
+
+			data-field="ExpiryDate"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ExpiryDate_fieldheadercolumn}
+	{BEGIN ExpiryDate_fieldheader}
+	<SPAN {$ExpiryDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ExpiryDate" data-fieldname="ExpiryDate">
+	{$label vw_rfqs_pdf ExpiryDate }	{$arrow_icon_ExpiryDate}
+	</SPAN>
+	{END ExpiryDate_fieldheader}
+{END ExpiryDate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$IssueDate_class}
+			"
+
+			data-field="IssueDate"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN IssueDate_fieldheadercolumn}
+	{BEGIN IssueDate_fieldheader}
+	<SPAN {$IssueDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="IssueDate" data-fieldname="IssueDate">
+	{$label vw_rfqs_pdf IssueDate }	{$arrow_icon_IssueDate}
+	</SPAN>
+	{END IssueDate_fieldheader}
+{END IssueDate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+				 
+					{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ShipperName_class}
+			"
+
+			data-field="ShipperName"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ShipperName_fieldheadercolumn}
+	{BEGIN ShipperName_fieldheader}
+	<SPAN {$ShipperName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ShipperName" data-fieldname="ShipperName">
+	{$label vw_rfqs_pdf ShipperName }	{$arrow_icon_ShipperName}
+	</SPAN>
+	{END ShipperName_fieldheader}
+{END ShipperName_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ShipperAddress_class}
+			"
+
+			data-field="ShipperAddress"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ShipperAddress_fieldheadercolumn}
+	{BEGIN ShipperAddress_fieldheader}
+	<SPAN {$ShipperAddress_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ShipperAddress" data-fieldname="ShipperAddress">
+	{$label vw_rfqs_pdf ShipperAddress }	{$arrow_icon_ShipperAddress}
+	</SPAN>
+	{END ShipperAddress_fieldheader}
+{END ShipperAddress_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ConsigneeName_class}
+			"
+
+			data-field="ConsigneeName"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ConsigneeName_fieldheadercolumn}
+	{BEGIN ConsigneeName_fieldheader}
+	<SPAN {$ConsigneeName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ConsigneeName" data-fieldname="ConsigneeName">
+	{$label vw_rfqs_pdf ConsigneeName }	{$arrow_icon_ConsigneeName}
+	</SPAN>
+	{END ConsigneeName_fieldheader}
+{END ConsigneeName_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ConsigneeAddress_class}
+			"
+
+			data-field="ConsigneeAddress"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ConsigneeAddress_fieldheadercolumn}
+	{BEGIN ConsigneeAddress_fieldheader}
+	<SPAN {$ConsigneeAddress_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ConsigneeAddress" data-fieldname="ConsigneeAddress">
+	{$label vw_rfqs_pdf ConsigneeAddress }	{$arrow_icon_ConsigneeAddress}
+	</SPAN>
+	{END ConsigneeAddress_fieldheader}
+{END ConsigneeAddress_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+				 
+					{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CarrierID_class}
+			"
+
+			data-field="CarrierID"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CarrierID_fieldheadercolumn}
+	{BEGIN CarrierID_fieldheader}
+	<SPAN {$CarrierID_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CarrierID" data-fieldname="CarrierID">
+	{$label vw_rfqs_pdf CarrierID }	{$arrow_icon_CarrierID}
+	</SPAN>
+	{END CarrierID_fieldheader}
+{END CarrierID_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+				 
+					{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$Instructions_class}
+			"
+
+			data-field="Instructions"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Instructions_fieldheadercolumn}
+	{BEGIN Instructions_fieldheader}
+	<SPAN {$Instructions_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Instructions" data-fieldname="Instructions">
+	{$label vw_rfqs_pdf Instructions }	{$arrow_icon_Instructions}
+	</SPAN>
+	{END Instructions_fieldheader}
+{END Instructions_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$RFQResponseDate_class}
+			"
+
+			data-field="RFQResponseDate"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN RFQResponseDate_fieldheadercolumn}
+	{BEGIN RFQResponseDate_fieldheader}
+	<SPAN {$RFQResponseDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="RFQResponseDate" data-fieldname="RFQResponseDate">
+	{$label vw_rfqs_pdf RFQResponseDate }	{$arrow_icon_RFQResponseDate}
+	</SPAN>
+	{END RFQResponseDate_fieldheader}
+{END RFQResponseDate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+				 
+					{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$Description_class}
+			"
+
+			data-field="Description"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Description_fieldheadercolumn}
+	{BEGIN Description_fieldheader}
+	<SPAN {$Description_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Description" data-fieldname="Description">
+	{$label vw_rfqs_pdf Description }	{$arrow_icon_Description}
+	</SPAN>
+	{END Description_fieldheader}
+{END Description_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+				 
+					{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CarrierCompanyID_class}
+			"
+
+			data-field="CarrierCompanyID"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CarrierCompanyID_fieldheadercolumn}
+	{BEGIN CarrierCompanyID_fieldheader}
+	<SPAN {$CarrierCompanyID_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CarrierCompanyID" data-fieldname="CarrierCompanyID">
+	{$label vw_rfqs_pdf CarrierCompanyID }	{$arrow_icon_CarrierCompanyID}
+	</SPAN>
+	{END CarrierCompanyID_fieldheader}
+{END CarrierCompanyID_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+				 
+					{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CarrierAddress_class}
+			"
+
+			data-field="CarrierAddress"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CarrierAddress_fieldheadercolumn}
+	{BEGIN CarrierAddress_fieldheader}
+	<SPAN {$CarrierAddress_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field38" {$item_simple_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CarrierAddress" data-fieldname="CarrierAddress">
+	{$label vw_rfqs_pdf CarrierAddress }	{$arrow_icon_CarrierAddress}
+	</SPAN>
+	{END CarrierAddress_fieldheader}
+{END CarrierAddress_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+				 
+					{BEGIN cellblock_grid_headcell_field15}
+	<th
+	
+	{$cell_grid_headcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CarrierPhone_class}
+			"
+
+			data-field="CarrierPhone"
+	
+	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CarrierPhone_fieldheadercolumn}
+	{BEGIN CarrierPhone_fieldheader}
+	<SPAN {$CarrierPhone_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field39" {$item_simple_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CarrierPhone" data-fieldname="CarrierPhone">
+	{$label vw_rfqs_pdf CarrierPhone }	{$arrow_icon_CarrierPhone}
+	</SPAN>
+	{END CarrierPhone_fieldheader}
+{END CarrierPhone_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field15}
+				 
+					{BEGIN cellblock_grid_headcell_field16}
+	<th
+	
+	{$cell_grid_headcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CarrierFax_class}
+			"
+
+			data-field="CarrierFax"
+	
+	data-cellId="grid_headcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CarrierFax_fieldheadercolumn}
+	{BEGIN CarrierFax_fieldheader}
+	<SPAN {$CarrierFax_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field40" {$item_simple_grid_field40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CarrierFax" data-fieldname="CarrierFax">
+	{$label vw_rfqs_pdf CarrierFax }	{$arrow_icon_CarrierFax}
+	</SPAN>
+	{END CarrierFax_fieldheader}
+{END CarrierFax_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field16}
+				 
+					{BEGIN cellblock_grid_headcell_field17}
+	<th
+	
+	{$cell_grid_headcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$EquipmentType_class}
+			"
+
+			data-field="EquipmentType"
+	
+	data-cellId="grid_headcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN EquipmentType_fieldheadercolumn}
+	{BEGIN EquipmentType_fieldheader}
+	<SPAN {$EquipmentType_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field41" {$item_simple_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="EquipmentType" data-fieldname="EquipmentType">
+	{$label vw_rfqs_pdf EquipmentType }	{$arrow_icon_EquipmentType}
+	</SPAN>
+	{END EquipmentType_fieldheader}
+{END EquipmentType_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field17}
+				 
+					{BEGIN cellblock_grid_headcell_field18}
+	<th
+	
+	{$cell_grid_headcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ContactDetails_class}
+			"
+
+			data-field="ContactDetails"
+	
+	data-cellId="grid_headcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ContactDetails_fieldheadercolumn}
+	{BEGIN ContactDetails_fieldheader}
+	<SPAN {$ContactDetails_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field42" {$item_simple_grid_field42} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ContactDetails" data-fieldname="ContactDetails">
+	{$label vw_rfqs_pdf ContactDetails }	{$arrow_icon_ContactDetails}
+	</SPAN>
+	{END ContactDetails_fieldheader}
+{END ContactDetails_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field18}
+				 
+					{BEGIN cellblock_grid_headcell_field19}
+	<th
+	
+	{$cell_grid_headcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$PickupDate_class}
+			"
+
+			data-field="PickupDate"
+	
+	data-cellId="grid_headcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN PickupDate_fieldheadercolumn}
+	{BEGIN PickupDate_fieldheader}
+	<SPAN {$PickupDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field43" {$item_simple_grid_field43} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="PickupDate" data-fieldname="PickupDate">
+	{$label vw_rfqs_pdf PickupDate }	{$arrow_icon_PickupDate}
+	</SPAN>
+	{END PickupDate_fieldheader}
+{END PickupDate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field19}
+				 
+					{BEGIN cellblock_grid_headcell_field20}
+	<th
+	
+	{$cell_grid_headcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$DeliveryDate_class}
+			"
+
+			data-field="DeliveryDate"
+	
+	data-cellId="grid_headcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN DeliveryDate_fieldheadercolumn}
+	{BEGIN DeliveryDate_fieldheader}
+	<SPAN {$DeliveryDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field44" {$item_simple_grid_field44} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="DeliveryDate" data-fieldname="DeliveryDate">
+	{$label vw_rfqs_pdf DeliveryDate }	{$arrow_icon_DeliveryDate}
+	</SPAN>
+	{END DeliveryDate_fieldheader}
+{END DeliveryDate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field20}
+				 
+					{BEGIN cellblock_grid_headcell_field21}
+	<th
+	
+	{$cell_grid_headcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$SalesRepName_class}
+			"
+
+			data-field="SalesRepName"
+	
+	data-cellId="grid_headcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN SalesRepName_fieldheadercolumn}
+	{BEGIN SalesRepName_fieldheader}
+	<SPAN {$SalesRepName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field45" {$item_simple_grid_field45} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="SalesRepName" data-fieldname="SalesRepName">
+	{$label vw_rfqs_pdf SalesRepName }	{$arrow_icon_SalesRepName}
+	</SPAN>
+	{END SalesRepName_fieldheader}
+{END SalesRepName_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field21}
+				 
+					{BEGIN cellblock_grid_headcell_field22}
+	<th
+	
+	{$cell_grid_headcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$SalesRepEmail_class}
+			"
+
+			data-field="SalesRepEmail"
+	
+	data-cellId="grid_headcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN SalesRepEmail_fieldheadercolumn}
+	{BEGIN SalesRepEmail_fieldheader}
+	<SPAN {$SalesRepEmail_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field46" {$item_simple_grid_field46} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="SalesRepEmail" data-fieldname="SalesRepEmail">
+	{$label vw_rfqs_pdf SalesRepEmail }	{$arrow_icon_SalesRepEmail}
+	</SPAN>
+	{END SalesRepEmail_fieldheader}
+{END SalesRepEmail_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field22}
+				 
+					{BEGIN cellblock_grid_headcell_field23}
+	<th
+	
+	{$cell_grid_headcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$SalesRepPrimaryPhone_class}
+			"
+
+			data-field="SalesRepPrimaryPhone"
+	
+	data-cellId="grid_headcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN SalesRepPrimaryPhone_fieldheadercolumn}
+	{BEGIN SalesRepPrimaryPhone_fieldheader}
+	<SPAN {$SalesRepPrimaryPhone_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field47" {$item_simple_grid_field47} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="SalesRepPrimaryPhone" data-fieldname="SalesRepPrimaryPhone">
+	{$label vw_rfqs_pdf SalesRepPrimaryPhone }	{$arrow_icon_SalesRepPrimaryPhone}
+	</SPAN>
+	{END SalesRepPrimaryPhone_fieldheader}
+{END SalesRepPrimaryPhone_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field23}
+							</tr>
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN inlineedit_column}
+{BEGIN inlineedit_link}
+<span data-itemtype="grid_inline_edit" data-itemid="grid_inline_edit" {$item_grid_inline_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Inline Edit" class="btn-link   
+	 glyphicon glyphicon-edit" {$inlineeditlink_attrs} title="Inline Edit" >		
+				
+								</a>
+</span>
+{END inlineedit_link}
+{END inlineedit_column}
+	 
+		{BEGIN inline_save}
+<span data-itemtype="grid_inline_save" data-itemid="grid_inline_save" {$item_grid_inline_save} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Save" class="btn-link   
+	 glyphicon glyphicon-ok" {$inlinesavelink_attrs} title="Save" >		
+				
+								</a>
+</span>
+{END inline_save}
+	 
+		{BEGIN inline_cancel}
+<span data-itemtype="grid_inline_cancel" data-itemid="grid_inline_cancel" {$item_grid_inline_cancel} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Cancel" class="btn-link   
+	 glyphicon glyphicon-remove" {$inlinerevertlink_attrs} title="Cancel" >		
+				
+								</a>
+</span>
+{END inline_cancel}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
+				 
+					{BEGIN cellblock_grid_cell_checkbox}
+	<td
+	
+	{$cell_grid_cell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
+	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox" {$item_grid_checkbox} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkbox_attrs}
+		>
+</span>	
+{END checkbox_column}
+	
+	</td>
+	{END cellblock_grid_cell_checkbox}
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ID_class}
+			"
+
+			data-field="ID"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ID_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ID" data-fieldname="ID" data-default-width >
+{$ID_value}
+</span>
+{END ID_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CustomerID_class}
+			"
+
+			data-field="CustomerID"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CustomerID_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CustomerID" data-fieldname="CustomerID" data-default-width >
+{$CustomerID_value}
+</span>
+{END CustomerID_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$EffectiveDate_class}
+			"
+
+			data-field="EffectiveDate"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN EffectiveDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="EffectiveDate" data-fieldname="EffectiveDate" data-default-width >
+{$EffectiveDate_value}
+</span>
+{END EffectiveDate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ExpiryDate_class}
+			"
+
+			data-field="ExpiryDate"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ExpiryDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ExpiryDate" data-fieldname="ExpiryDate" data-default-width >
+{$ExpiryDate_value}
+</span>
+{END ExpiryDate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$IssueDate_class}
+			"
+
+			data-field="IssueDate"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN IssueDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="IssueDate" data-fieldname="IssueDate" data-default-width >
+{$IssueDate_value}
+</span>
+{END IssueDate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+				 
+					{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ShipperName_class}
+			"
+
+			data-field="ShipperName"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ShipperName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ShipperName" data-fieldname="ShipperName" data-default-width >
+{$ShipperName_value}
+</span>
+{END ShipperName_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ShipperAddress_class}
+			"
+
+			data-field="ShipperAddress"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ShipperAddress_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ShipperAddress" data-fieldname="ShipperAddress" data-default-width >
+{$ShipperAddress_value}
+</span>
+{END ShipperAddress_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ConsigneeName_class}
+			"
+
+			data-field="ConsigneeName"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ConsigneeName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ConsigneeName" data-fieldname="ConsigneeName" data-default-width >
+{$ConsigneeName_value}
+</span>
+{END ConsigneeName_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ConsigneeAddress_class}
+			"
+
+			data-field="ConsigneeAddress"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ConsigneeAddress_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ConsigneeAddress" data-fieldname="ConsigneeAddress" data-default-width >
+{$ConsigneeAddress_value}
+</span>
+{END ConsigneeAddress_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+				 
+					{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CarrierID_class}
+			"
+
+			data-field="CarrierID"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CarrierID_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CarrierID" data-fieldname="CarrierID" data-default-width >
+{$CarrierID_value}
+</span>
+{END CarrierID_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+				 
+					{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$Instructions_class}
+			"
+
+			data-field="Instructions"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Instructions_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Instructions" data-fieldname="Instructions" data-default-width >
+{$Instructions_value}
+</span>
+{END Instructions_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+				 
+					{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$RFQResponseDate_class}
+			"
+
+			data-field="RFQResponseDate"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN RFQResponseDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="RFQResponseDate" data-fieldname="RFQResponseDate" data-default-width >
+{$RFQResponseDate_value}
+</span>
+{END RFQResponseDate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+				 
+					{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$Description_class}
+			"
+
+			data-field="Description"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Description_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Description" data-fieldname="Description" data-default-width >
+{$Description_value}
+</span>
+{END Description_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+				 
+					{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CarrierCompanyID_class}
+			"
+
+			data-field="CarrierCompanyID"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CarrierCompanyID_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CarrierCompanyID" data-fieldname="CarrierCompanyID" data-default-width >
+{$CarrierCompanyID_value}
+</span>
+{END CarrierCompanyID_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+				 
+					{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CarrierAddress_class}
+			"
+
+			data-field="CarrierAddress"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CarrierAddress_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CarrierAddress" data-fieldname="CarrierAddress" data-default-width >
+{$CarrierAddress_value}
+</span>
+{END CarrierAddress_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+				 
+					{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CarrierPhone_class}
+			"
+
+			data-field="CarrierPhone"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CarrierPhone_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CarrierPhone" data-fieldname="CarrierPhone" data-default-width >
+{$CarrierPhone_value}
+</span>
+{END CarrierPhone_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+				 
+					{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$CarrierFax_class}
+			"
+
+			data-field="CarrierFax"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN CarrierFax_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="CarrierFax" data-fieldname="CarrierFax" data-default-width >
+{$CarrierFax_value}
+</span>
+{END CarrierFax_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+				 
+					{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$EquipmentType_class}
+			"
+
+			data-field="EquipmentType"
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN EquipmentType_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="EquipmentType" data-fieldname="EquipmentType" data-default-width >
+{$EquipmentType_value}
+</span>
+{END EquipmentType_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+				 
+					{BEGIN cellblock_grid_cell_field18}
+	<td
+	
+	{$cell_grid_cell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ContactDetails_class}
+			"
+
+			data-field="ContactDetails"
+	
+	data-cellId="grid_cell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ContactDetails_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ContactDetails" data-fieldname="ContactDetails" data-default-width >
+{$ContactDetails_value}
+</span>
+{END ContactDetails_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field18}
+				 
+					{BEGIN cellblock_grid_cell_field19}
+	<td
+	
+	{$cell_grid_cell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$PickupDate_class}
+			"
+
+			data-field="PickupDate"
+	
+	data-cellId="grid_cell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN PickupDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="PickupDate" data-fieldname="PickupDate" data-default-width >
+{$PickupDate_value}
+</span>
+{END PickupDate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field19}
+				 
+					{BEGIN cellblock_grid_cell_field20}
+	<td
+	
+	{$cell_grid_cell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$DeliveryDate_class}
+			"
+
+			data-field="DeliveryDate"
+	
+	data-cellId="grid_cell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN DeliveryDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="DeliveryDate" data-fieldname="DeliveryDate" data-default-width >
+{$DeliveryDate_value}
+</span>
+{END DeliveryDate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field20}
+				 
+					{BEGIN cellblock_grid_cell_field21}
+	<td
+	
+	{$cell_grid_cell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$SalesRepName_class}
+			"
+
+			data-field="SalesRepName"
+	
+	data-cellId="grid_cell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN SalesRepName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="SalesRepName" data-fieldname="SalesRepName" data-default-width >
+{$SalesRepName_value}
+</span>
+{END SalesRepName_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field21}
+				 
+					{BEGIN cellblock_grid_cell_field22}
+	<td
+	
+	{$cell_grid_cell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$SalesRepEmail_class}
+			"
+
+			data-field="SalesRepEmail"
+	
+	data-cellId="grid_cell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN SalesRepEmail_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="SalesRepEmail" data-fieldname="SalesRepEmail" data-default-width >
+{$SalesRepEmail_value}
+</span>
+{END SalesRepEmail_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field22}
+				 
+					{BEGIN cellblock_grid_cell_field23}
+	<td
+	
+	{$cell_grid_cell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$SalesRepPrimaryPhone_class}
+			"
+
+			data-field="SalesRepPrimaryPhone"
+	
+	data-cellId="grid_cell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN SalesRepPrimaryPhone_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="SalesRepPrimaryPhone" data-fieldname="SalesRepPrimaryPhone" data-default-width >
+{$SalesRepPrimaryPhone_value}
+</span>
+{END SalesRepPrimaryPhone_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field23}
+							</tr>
+					 
+					
+											{END grid_row}
+					</tbody>
+													<tfoot>
+					
+		 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+				 
+					{BEGIN cellblock_grid_footcell_checkbox}
+	<td
+	
+	{$cell_grid_footcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_checkbox}
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+				 
+					{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+				 
+					{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+				 
+					{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+				 
+					{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+				 
+					{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+				 
+					{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+				 
+					{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+				 
+					{BEGIN cellblock_grid_footcell_field15}
+	<td
+	
+	{$cell_grid_footcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field15}
+				 
+					{BEGIN cellblock_grid_footcell_field16}
+	<td
+	
+	{$cell_grid_footcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field16}
+				 
+					{BEGIN cellblock_grid_footcell_field17}
+	<td
+	
+	{$cell_grid_footcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field17}
+				 
+					{BEGIN cellblock_grid_footcell_field18}
+	<td
+	
+	{$cell_grid_footcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field18}
+				 
+					{BEGIN cellblock_grid_footcell_field19}
+	<td
+	
+	{$cell_grid_footcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field19}
+				 
+					{BEGIN cellblock_grid_footcell_field20}
+	<td
+	
+	{$cell_grid_footcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field20}
+				 
+					{BEGIN cellblock_grid_footcell_field21}
+	<td
+	
+	{$cell_grid_footcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field21}
+				 
+					{BEGIN cellblock_grid_footcell_field22}
+	<td
+	
+	{$cell_grid_footcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field22}
+				 
+					{BEGIN cellblock_grid_footcell_field23}
+	<td
+	
+	{$cell_grid_footcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vw_rfqs_pdf_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field23}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+						</div>
+					<div class="r-below">
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+						</div>
+					{$footer}
+				</div>	
+			</div>	
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,147 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel admin_users export}","hidden":"{$item_hide_export_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":{$CompanyID_pdfvalue},"hidden":"{$item_hide_export_field1}"},
+				
+				
+			{"text":{$AddressID_pdfvalue},"hidden":"{$item_hide_export_field2}"},
+				
+				
+			{"text":{$Login_pdfvalue},"hidden":"{$item_hide_export_field3}"},
+				
+				
+			{"text":{$PasswordHint_pdfvalue},"hidden":"{$item_hide_export_field5}"},
+				
+				
+			{"text":{$Name_pdfvalue},"hidden":"{$item_hide_export_field6}"},
+				
+				
+			{"text":{$Email_pdfvalue},"hidden":"{$item_hide_export_field7}"},
+				
+				
+			{"text":{$PrimaryPhone_pdfvalue},"hidden":"{$item_hide_export_field8}"},
+				
+				
+			{"text":{$PrimaryCell_pdfvalue},"hidden":"{$item_hide_export_field9}"},
+				
+				
+			{"text":{$Picture_pdfvalue},"hidden":"{$item_hide_export_field}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+					]
+}
+  

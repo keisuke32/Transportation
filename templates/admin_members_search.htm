@@ -1,0 +1,537 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel admin_members search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ID}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="ID" data-fieldname="ID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ID}">
+		{$label admin_members ID }	</label>
+	<div class="r-search-option">
+		{$searchtype_ID}
+	</div>
+	<div class="r-search-field">
+		{$ID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ID_editcontrol1}
+	</div>
+	
+</div>
+
+{END ID_fieldblock}
+											
+{BEGIN CompanyID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CompanyID}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CompanyID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="CompanyID" data-fieldname="CompanyID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CompanyID}">
+		{$label admin_members CompanyID }	</label>
+	<div class="r-search-option">
+		{$searchtype_CompanyID}
+	</div>
+	<div class="r-search-field">
+		{$CompanyID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CompanyID_editcontrol1}
+	</div>
+	
+</div>
+
+{END CompanyID_fieldblock}
+											
+{BEGIN AddressID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_AddressID}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="AddressID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="AddressID" data-fieldname="AddressID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_AddressID}">
+		{$label admin_members AddressID }	</label>
+	<div class="r-search-option">
+		{$searchtype_AddressID}
+	</div>
+	<div class="r-search-field">
+		{$AddressID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$AddressID_editcontrol1}
+	</div>
+	
+</div>
+
+{END AddressID_fieldblock}
+											
+{BEGIN Login_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Login}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Login{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="Login" data-fieldname="Login" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Login}">
+		{$label admin_members Login }	</label>
+	<div class="r-search-option">
+		{$searchtype_Login}
+	</div>
+	<div class="r-search-field">
+		{$Login_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Login_editcontrol1}
+	</div>
+	
+</div>
+
+{END Login_fieldblock}
+											
+{BEGIN Password_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Password}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Password{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="Password" data-fieldname="Password" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Password}">
+		{$label admin_members Password }	</label>
+	<div class="r-search-option">
+		{$searchtype_Password}
+	</div>
+	<div class="r-search-field">
+		{$Password_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Password_editcontrol1}
+	</div>
+	
+</div>
+
+{END Password_fieldblock}
+											
+{BEGIN PasswordHint_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PasswordHint}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="PasswordHint{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="PasswordHint" data-fieldname="PasswordHint" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_PasswordHint}">
+		{$label admin_members PasswordHint }	</label>
+	<div class="r-search-option">
+		{$searchtype_PasswordHint}
+	</div>
+	<div class="r-search-field">
+		{$PasswordHint_editcontrol}	</div>
+	<div class="r-search-field">
+		{$PasswordHint_editcontrol1}
+	</div>
+	
+</div>
+
+{END PasswordHint_fieldblock}
+											
+{BEGIN Name_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Name}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Name{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="Name" data-fieldname="Name" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Name}">
+		{$label admin_members Name }	</label>
+	<div class="r-search-option">
+		{$searchtype_Name}
+	</div>
+	<div class="r-search-field">
+		{$Name_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Name_editcontrol1}
+	</div>
+	
+</div>
+
+{END Name_fieldblock}
+											
+{BEGIN Email_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Email}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Email{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="Email" data-fieldname="Email" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Email}">
+		{$label admin_members Email }	</label>
+	<div class="r-search-option">
+		{$searchtype_Email}
+	</div>
+	<div class="r-search-field">
+		{$Email_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Email_editcontrol1}
+	</div>
+	
+</div>
+
+{END Email_fieldblock}
+											
+{BEGIN PrimaryPhone_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PrimaryPhone}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="PrimaryPhone{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="PrimaryPhone" data-fieldname="PrimaryPhone" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_PrimaryPhone}">
+		{$label admin_members PrimaryPhone }	</label>
+	<div class="r-search-option">
+		{$searchtype_PrimaryPhone}
+	</div>
+	<div class="r-search-field">
+		{$PrimaryPhone_editcontrol}	</div>
+	<div class="r-search-field">
+		{$PrimaryPhone_editcontrol1}
+	</div>
+	
+</div>
+
+{END PrimaryPhone_fieldblock}
+											
+{BEGIN PrimaryCell_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PrimaryCell}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="PrimaryCell{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="PrimaryCell" data-fieldname="PrimaryCell" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_PrimaryCell}">
+		{$label admin_members PrimaryCell }	</label>
+	<div class="r-search-option">
+		{$searchtype_PrimaryCell}
+	</div>
+	<div class="r-search-field">
+		{$PrimaryCell_editcontrol}	</div>
+	<div class="r-search-field">
+		{$PrimaryCell_editcontrol1}
+	</div>
+	
+</div>
+
+{END PrimaryCell_fieldblock}
+											
+{BEGIN Active_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Active}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Active{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="Active" data-fieldname="Active" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Active}">
+		{$label admin_members Active }	</label>
+	<div class="r-search-option">
+		{$searchtype_Active}
+	</div>
+	<div class="r-search-field">
+		{$Active_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Active_editcontrol1}
+	</div>
+	
+</div>
+
+{END Active_fieldblock}
+											
+{BEGIN TimeStamp_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TimeStamp}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="TimeStamp{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="TimeStamp" data-fieldname="TimeStamp" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_TimeStamp}">
+		{$label admin_members TimeStamp }	</label>
+	<div class="r-search-option">
+		{$searchtype_TimeStamp}
+	</div>
+	<div class="r-search-field">
+		{$TimeStamp_editcontrol}	</div>
+	<div class="r-search-field">
+		{$TimeStamp_editcontrol1}
+	</div>
+	
+</div>
+
+{END TimeStamp_fieldblock}
+											
+{BEGIN reset_token_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_reset_token}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="reset_token{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="reset_token" data-fieldname="reset_token" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_reset_token}">
+		{$label admin_members reset_token }	</label>
+	<div class="r-search-option">
+		{$searchtype_reset_token}
+	</div>
+	<div class="r-search-field">
+		{$reset_token_editcontrol}	</div>
+	<div class="r-search-field">
+		{$reset_token_editcontrol1}
+	</div>
+	
+</div>
+
+{END reset_token_fieldblock}
+											
+{BEGIN reset_date_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_reset_date}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="reset_date{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="reset_date" data-fieldname="reset_date" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_reset_date}">
+		{$label admin_members reset_date }	</label>
+	<div class="r-search-option">
+		{$searchtype_reset_date}
+	</div>
+	<div class="r-search-field">
+		{$reset_date_editcontrol}	</div>
+	<div class="r-search-field">
+		{$reset_date_editcontrol1}
+	</div>
+	
+</div>
+
+{END reset_date_fieldblock}
+											
+{BEGIN two_factor_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_two_factor}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="two_factor{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="two_factor" data-fieldname="two_factor" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_two_factor}">
+		{$label admin_members two_factor }	</label>
+	<div class="r-search-option">
+		{$searchtype_two_factor}
+	</div>
+	<div class="r-search-field">
+		{$two_factor_editcontrol}	</div>
+	<div class="r-search-field">
+		{$two_factor_editcontrol1}
+	</div>
+	
+</div>
+
+{END two_factor_fieldblock}
+											
+{BEGIN totp_secret_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_totp_secret}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="totp_secret{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="totp_secret" data-fieldname="totp_secret" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_totp_secret}">
+		{$label admin_members totp_secret }	</label>
+	<div class="r-search-option">
+		{$searchtype_totp_secret}
+	</div>
+	<div class="r-search-field">
+		{$totp_secret_editcontrol}	</div>
+	<div class="r-search-field">
+		{$totp_secret_editcontrol1}
+	</div>
+	
+</div>
+
+{END totp_secret_fieldblock}
+											
+{BEGIN two_factor1_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_two_factor1}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="two_factor1{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="two_factor1" data-fieldname="two_factor1" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_two_factor1}">
+		{$label admin_members two_factor1 }	</label>
+	<div class="r-search-option">
+		{$searchtype_two_factor1}
+	</div>
+	<div class="r-search-field">
+		{$two_factor1_editcontrol}	</div>
+	<div class="r-search-field">
+		{$two_factor1_editcontrol1}
+	</div>
+	
+</div>
+
+{END two_factor1_fieldblock}
+											
+{BEGIN totp_secret1_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_totp_secret1}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="totp_secret1{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="totp_secret1" data-fieldname="totp_secret1" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_totp_secret1}">
+		{$label admin_members totp_secret1 }	</label>
+	<div class="r-search-option">
+		{$searchtype_totp_secret1}
+	</div>
+	<div class="r-search-field">
+		{$totp_secret1_editcontrol}	</div>
+	<div class="r-search-field">
+		{$totp_secret1_editcontrol1}
+	</div>
+	
+</div>
+
+{END totp_secret1_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Search			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reset			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancel			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

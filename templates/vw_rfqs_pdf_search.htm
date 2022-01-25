@@ -1,0 +1,804 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="250px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expand" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main}			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="expand_menu_button" {$item_expand_menu_button} data-topcell-item-type="expand_menu_button" >
+				<span data-itemtype="expand_menu_button" data-itemid="expand_menu_button" {$item_expand_menu_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Collapse" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Show menu" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Login			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		User Profile		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Log out		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Admin Area		
+		</a>
+	</li>
+{END adminarea_link}
+							{BEGIN changepwd_link}
+	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
+				
+		Change password		
+		</a>
+	</li>
+{END changepwd_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>	
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel vw_rfqs_pdf search}</h2>
+		</div>					</div>
+	</div>		
+{END top_block}
+						</div>
+					<div class="r-above">
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+				{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+						</div>
+					<div class="r-grid">
+										{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ID}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="ID" data-fieldname="ID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ID}">
+		{$label vw_rfqs_pdf ID }	</label>
+	<div class="r-search-option">
+		{$searchtype_ID}
+	</div>
+	<div class="r-search-field">
+		{$ID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ID_editcontrol1}
+	</div>
+	
+</div>
+
+{END ID_fieldblock}
+											
+{BEGIN CustomerID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CustomerID}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CustomerID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="CustomerID" data-fieldname="CustomerID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CustomerID}">
+		{$label vw_rfqs_pdf CustomerID }	</label>
+	<div class="r-search-option">
+		{$searchtype_CustomerID}
+	</div>
+	<div class="r-search-field">
+		{$CustomerID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CustomerID_editcontrol1}
+	</div>
+	
+</div>
+
+{END CustomerID_fieldblock}
+											
+{BEGIN EffectiveDate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_EffectiveDate}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="EffectiveDate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="EffectiveDate" data-fieldname="EffectiveDate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_EffectiveDate}">
+		{$label vw_rfqs_pdf EffectiveDate }	</label>
+	<div class="r-search-option">
+		{$searchtype_EffectiveDate}
+	</div>
+	<div class="r-search-field">
+		{$EffectiveDate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$EffectiveDate_editcontrol1}
+	</div>
+	
+</div>
+
+{END EffectiveDate_fieldblock}
+											
+{BEGIN ExpiryDate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ExpiryDate}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ExpiryDate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="ExpiryDate" data-fieldname="ExpiryDate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ExpiryDate}">
+		{$label vw_rfqs_pdf ExpiryDate }	</label>
+	<div class="r-search-option">
+		{$searchtype_ExpiryDate}
+	</div>
+	<div class="r-search-field">
+		{$ExpiryDate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ExpiryDate_editcontrol1}
+	</div>
+	
+</div>
+
+{END ExpiryDate_fieldblock}
+											
+{BEGIN IssueDate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_IssueDate}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="IssueDate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="IssueDate" data-fieldname="IssueDate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_IssueDate}">
+		{$label vw_rfqs_pdf IssueDate }	</label>
+	<div class="r-search-option">
+		{$searchtype_IssueDate}
+	</div>
+	<div class="r-search-field">
+		{$IssueDate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$IssueDate_editcontrol1}
+	</div>
+	
+</div>
+
+{END IssueDate_fieldblock}
+											
+{BEGIN ShipperName_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperName}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ShipperName{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="ShipperName" data-fieldname="ShipperName" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ShipperName}">
+		{$label vw_rfqs_pdf ShipperName }	</label>
+	<div class="r-search-option">
+		{$searchtype_ShipperName}
+	</div>
+	<div class="r-search-field">
+		{$ShipperName_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ShipperName_editcontrol1}
+	</div>
+	
+</div>
+
+{END ShipperName_fieldblock}
+											
+{BEGIN ShipperAddress_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ShipperAddress}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ShipperAddress{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="ShipperAddress" data-fieldname="ShipperAddress" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ShipperAddress}">
+		{$label vw_rfqs_pdf ShipperAddress }	</label>
+	<div class="r-search-option">
+		{$searchtype_ShipperAddress}
+	</div>
+	<div class="r-search-field">
+		{$ShipperAddress_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ShipperAddress_editcontrol1}
+	</div>
+	
+</div>
+
+{END ShipperAddress_fieldblock}
+											
+{BEGIN ConsigneeName_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeName}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ConsigneeName{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="ConsigneeName" data-fieldname="ConsigneeName" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ConsigneeName}">
+		{$label vw_rfqs_pdf ConsigneeName }	</label>
+	<div class="r-search-option">
+		{$searchtype_ConsigneeName}
+	</div>
+	<div class="r-search-field">
+		{$ConsigneeName_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ConsigneeName_editcontrol1}
+	</div>
+	
+</div>
+
+{END ConsigneeName_fieldblock}
+											
+{BEGIN ConsigneeAddress_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ConsigneeAddress}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ConsigneeAddress{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="ConsigneeAddress" data-fieldname="ConsigneeAddress" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ConsigneeAddress}">
+		{$label vw_rfqs_pdf ConsigneeAddress }	</label>
+	<div class="r-search-option">
+		{$searchtype_ConsigneeAddress}
+	</div>
+	<div class="r-search-field">
+		{$ConsigneeAddress_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ConsigneeAddress_editcontrol1}
+	</div>
+	
+</div>
+
+{END ConsigneeAddress_fieldblock}
+											
+{BEGIN CarrierID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CarrierID}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CarrierID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="CarrierID" data-fieldname="CarrierID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CarrierID}">
+		{$label vw_rfqs_pdf CarrierID }	</label>
+	<div class="r-search-option">
+		{$searchtype_CarrierID}
+	</div>
+	<div class="r-search-field">
+		{$CarrierID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CarrierID_editcontrol1}
+	</div>
+	
+</div>
+
+{END CarrierID_fieldblock}
+											
+{BEGIN Instructions_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Instructions}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Instructions{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="Instructions" data-fieldname="Instructions" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Instructions}">
+		{$label vw_rfqs_pdf Instructions }	</label>
+	<div class="r-search-option">
+		{$searchtype_Instructions}
+	</div>
+	<div class="r-search-field">
+		{$Instructions_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Instructions_editcontrol1}
+	</div>
+	
+</div>
+
+{END Instructions_fieldblock}
+											
+{BEGIN RFQResponseDate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_RFQResponseDate}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="RFQResponseDate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="RFQResponseDate" data-fieldname="RFQResponseDate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_RFQResponseDate}">
+		{$label vw_rfqs_pdf RFQResponseDate }	</label>
+	<div class="r-search-option">
+		{$searchtype_RFQResponseDate}
+	</div>
+	<div class="r-search-field">
+		{$RFQResponseDate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$RFQResponseDate_editcontrol1}
+	</div>
+	
+</div>
+
+{END RFQResponseDate_fieldblock}
+											
+{BEGIN Description_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Description}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Description{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="Description" data-fieldname="Description" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Description}">
+		{$label vw_rfqs_pdf Description }	</label>
+	<div class="r-search-option">
+		{$searchtype_Description}
+	</div>
+	<div class="r-search-field">
+		{$Description_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Description_editcontrol1}
+	</div>
+	
+</div>
+
+{END Description_fieldblock}
+											
+{BEGIN CarrierCompanyID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CarrierCompanyID}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CarrierCompanyID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="CarrierCompanyID" data-fieldname="CarrierCompanyID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CarrierCompanyID}">
+		{$label vw_rfqs_pdf CarrierCompanyID }	</label>
+	<div class="r-search-option">
+		{$searchtype_CarrierCompanyID}
+	</div>
+	<div class="r-search-field">
+		{$CarrierCompanyID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CarrierCompanyID_editcontrol1}
+	</div>
+	
+</div>
+
+{END CarrierCompanyID_fieldblock}
+											
+{BEGIN CarrierAddress_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CarrierAddress}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CarrierAddress{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="CarrierAddress" data-fieldname="CarrierAddress" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CarrierAddress}">
+		{$label vw_rfqs_pdf CarrierAddress }	</label>
+	<div class="r-search-option">
+		{$searchtype_CarrierAddress}
+	</div>
+	<div class="r-search-field">
+		{$CarrierAddress_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CarrierAddress_editcontrol1}
+	</div>
+	
+</div>
+
+{END CarrierAddress_fieldblock}
+											
+{BEGIN CarrierPhone_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CarrierPhone}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CarrierPhone{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="CarrierPhone" data-fieldname="CarrierPhone" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CarrierPhone}">
+		{$label vw_rfqs_pdf CarrierPhone }	</label>
+	<div class="r-search-option">
+		{$searchtype_CarrierPhone}
+	</div>
+	<div class="r-search-field">
+		{$CarrierPhone_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CarrierPhone_editcontrol1}
+	</div>
+	
+</div>
+
+{END CarrierPhone_fieldblock}
+											
+{BEGIN CarrierFax_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CarrierFax}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="CarrierFax{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="CarrierFax" data-fieldname="CarrierFax" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_CarrierFax}">
+		{$label vw_rfqs_pdf CarrierFax }	</label>
+	<div class="r-search-option">
+		{$searchtype_CarrierFax}
+	</div>
+	<div class="r-search-field">
+		{$CarrierFax_editcontrol}	</div>
+	<div class="r-search-field">
+		{$CarrierFax_editcontrol1}
+	</div>
+	
+</div>
+
+{END CarrierFax_fieldblock}
+											
+{BEGIN EquipmentType_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_EquipmentType}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="EquipmentType{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="EquipmentType" data-fieldname="EquipmentType" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_EquipmentType}">
+		{$label vw_rfqs_pdf EquipmentType }	</label>
+	<div class="r-search-option">
+		{$searchtype_EquipmentType}
+	</div>
+	<div class="r-search-field">
+		{$EquipmentType_editcontrol}	</div>
+	<div class="r-search-field">
+		{$EquipmentType_editcontrol1}
+	</div>
+	
+</div>
+
+{END EquipmentType_fieldblock}
+											
+{BEGIN ContactDetails_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ContactDetails}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ContactDetails{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field18" {$item_integrated_search_field18} data-pageid="{$pageid}" data-field="ContactDetails" data-fieldname="ContactDetails" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ContactDetails}">
+		{$label vw_rfqs_pdf ContactDetails }	</label>
+	<div class="r-search-option">
+		{$searchtype_ContactDetails}
+	</div>
+	<div class="r-search-field">
+		{$ContactDetails_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ContactDetails_editcontrol1}
+	</div>
+	
+</div>
+
+{END ContactDetails_fieldblock}
+											
+{BEGIN PickupDate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_PickupDate}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="PickupDate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field19" {$item_integrated_search_field19} data-pageid="{$pageid}" data-field="PickupDate" data-fieldname="PickupDate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_PickupDate}">
+		{$label vw_rfqs_pdf PickupDate }	</label>
+	<div class="r-search-option">
+		{$searchtype_PickupDate}
+	</div>
+	<div class="r-search-field">
+		{$PickupDate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$PickupDate_editcontrol1}
+	</div>
+	
+</div>
+
+{END PickupDate_fieldblock}
+											
+{BEGIN DeliveryDate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DeliveryDate}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="DeliveryDate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="DeliveryDate" data-fieldname="DeliveryDate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_DeliveryDate}">
+		{$label vw_rfqs_pdf DeliveryDate }	</label>
+	<div class="r-search-option">
+		{$searchtype_DeliveryDate}
+	</div>
+	<div class="r-search-field">
+		{$DeliveryDate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$DeliveryDate_editcontrol1}
+	</div>
+	
+</div>
+
+{END DeliveryDate_fieldblock}
+											
+{BEGIN SalesRepName_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SalesRepName}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="SalesRepName{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field21" {$item_integrated_search_field21} data-pageid="{$pageid}" data-field="SalesRepName" data-fieldname="SalesRepName" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_SalesRepName}">
+		{$label vw_rfqs_pdf SalesRepName }	</label>
+	<div class="r-search-option">
+		{$searchtype_SalesRepName}
+	</div>
+	<div class="r-search-field">
+		{$SalesRepName_editcontrol}	</div>
+	<div class="r-search-field">
+		{$SalesRepName_editcontrol1}
+	</div>
+	
+</div>
+
+{END SalesRepName_fieldblock}
+											
+{BEGIN SalesRepEmail_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SalesRepEmail}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="SalesRepEmail{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field22" {$item_integrated_search_field22} data-pageid="{$pageid}" data-field="SalesRepEmail" data-fieldname="SalesRepEmail" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_SalesRepEmail}">
+		{$label vw_rfqs_pdf SalesRepEmail }	</label>
+	<div class="r-search-option">
+		{$searchtype_SalesRepEmail}
+	</div>
+	<div class="r-search-field">
+		{$SalesRepEmail_editcontrol}	</div>
+	<div class="r-search-field">
+		{$SalesRepEmail_editcontrol1}
+	</div>
+	
+</div>
+
+{END SalesRepEmail_fieldblock}
+											
+{BEGIN SalesRepPrimaryPhone_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SalesRepPrimaryPhone}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="SalesRepPrimaryPhone{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field23" {$item_integrated_search_field23} data-pageid="{$pageid}" data-field="SalesRepPrimaryPhone" data-fieldname="SalesRepPrimaryPhone" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_SalesRepPrimaryPhone}">
+		{$label vw_rfqs_pdf SalesRepPrimaryPhone }	</label>
+	<div class="r-search-option">
+		{$searchtype_SalesRepPrimaryPhone}
+	</div>
+	<div class="r-search-field">
+		{$SalesRepPrimaryPhone_editcontrol}	</div>
+	<div class="r-search-field">
+		{$SalesRepPrimaryPhone_editcontrol1}
+	</div>
+	
+</div>
+
+{END SalesRepPrimaryPhone_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+						</div>
+					<div class="r-below">
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	
+">
+		 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Search			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reset			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancel			</a>
+</span>
+{END cancel_button}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+						</div>
+					{$footer}
+				</div>	
+			</div>	
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>
